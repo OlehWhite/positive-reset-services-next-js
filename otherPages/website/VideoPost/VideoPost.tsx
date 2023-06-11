@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { VideoLogo, Wrapper } from "./styled";
 import IMGVideoLogo from "../../../public/Websitе-cover-video.jpg";
+import { VideoLogo, Wrapper } from "./styled";
 import { Box, Modal } from "@mui/material";
+import { useState } from "react";
 import Image from "next/image";
 
 const style = {
