@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="update" />
+    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686479420125</updated>
       <workItem from="1686479422459" duration="14000" />
-      <workItem from="1686479440144" duration="772000" />
+      <workItem from="1686479440144" duration="1713000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1686480218770</created>
@@ -47,7 +50,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686480218770</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1686480265558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686480265558</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
