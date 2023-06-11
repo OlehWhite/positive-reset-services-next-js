@@ -1,0 +1,16 @@
+export const DATA_LINKS = [
+  { name: "How to Start", path: "/how-to-start" },
+  { name: "State License", path: "/state-license" },
+  { name: "Training", path: "/training" },
+  { name: "Interview", path: "/interview" },
+  { name: "ERM", path: "/erm" },
+  { name: "Find Location", path: "/find-location" },
+  { name: "Community Integration", path: "/community-integration" },
+  { name: "Office Layout/Setup", path: "/office-layout-setup" },
+  { name: "Website", path: "/website" },
+  { name: "Appointment Request", path: "/appointment-request" },
+  { name: "Billing and Insurances", path: "/billing-and-insurances" },
+  { name: "Career Opportunities", path: "/career-opportunities" },
+  { name: "Medication Management", path: "/medication-management" },
+  { name: "Child and Adolescent", path: "/child-and-adolescent" },
+];
