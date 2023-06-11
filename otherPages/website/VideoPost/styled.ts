@@ -8,6 +8,7 @@ export const VideoLogo = styled("div")(() => {
     boxShadow: "1px 1px 4px 0px silver",
     transition: ".3s",
     boxSizing: "border-box",
+    cursor: 'pointer',
 
     "&:hover": {
       transition: ".3s",

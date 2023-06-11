@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/website/VideoPost/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/website/VideoPost/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +30,7 @@
     "last_opened_file_path": "C:/Users/oleh.white/Desktop/positive-reset-clinic-next-js",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "MTConfigurable",
+    "ts.external.directory.path": "C:\\Users\\oleh.white\\Desktop\\positive-reset-clinic-next-js\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -41,7 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686479420125</updated>
       <workItem from="1686479422459" duration="14000" />
-      <workItem from="1686479440144" duration="4671000" />
+      <workItem from="1686479440144" duration="6294000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1686480218770</created>
@@ -85,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686484552100</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <created>1686484947836</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686484947836</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
