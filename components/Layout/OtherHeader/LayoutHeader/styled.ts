@@ -95,7 +95,7 @@ export const Link = styled("a")(() => {
     justifyContent: "center",
     padding: 5,
     borderRadius: "50%",
-    backgroundColor: "rgb(95,95,95)",
+    backgroundColor: "rgba(95,95,95,0.73)",
     cursor: "pointer",
     marginRight: 6,
     transition: ".3s",

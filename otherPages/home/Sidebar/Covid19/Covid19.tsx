@@ -95,7 +95,7 @@ export const Covid19: FC = () => {
           <Email>{email}</Email>
           <Address>{address}</Address>
           <Box sx={{ display: "flex" }}>
-            <Link href={linkFacebook}>
+            <Link href={linkFacebook} target="_blank">
               <Image
                 src={IMGFacebook}
                 alt="Facebook"
@@ -104,7 +104,7 @@ export const Covid19: FC = () => {
                 height={22}
               />
             </Link>
-            <Link href={linkInstagram}>
+            <Link href={linkInstagram} target="_blank">
               <Image
                 src={IMGInstagram}
                 alt="Linkedin"

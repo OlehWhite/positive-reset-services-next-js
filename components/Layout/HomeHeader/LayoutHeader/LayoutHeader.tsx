@@ -16,12 +16,12 @@ import React, { FC, useEffect, useState } from "react";
 import { Box } from "@mui/material";
 import axios from "axios";
 import Image from "next/image";
-import IMGHomeLogo from "../../../../public/logo.png";
 import IMGPhoneLogo from "../../../../public/white-mobil.png";
 import IMGFollowIcon from "../../../../public/white-follow-icon.png";
 import IMGFacebook from "../../../../public/facebook-icon.svg";
 import IMGLinkedin from "../../../../public/linkedin-icon.svg";
 import { PRIVATE_DATA } from "../../../../otherPages/privateData";
+import LogoImg from "../../../LogoImg/LogoImg";
 
 const ID = "telephoneNumber";
 
@@ -59,21 +59,15 @@ export const LayoutHeader: FC = () => {
   return (
     <Wrapper>
       <Box>
-        <Image
-          src={IMGHomeLogo}
-          width={353}
-          height={47}
-          alt="Logo"
-          title="Logo"
-        />
+        <LogoImg />
       </Box>
       <ContactAndFollow>
         <Contact>
           <WrapperImg>
             <Image
               src={IMGPhoneLogo}
-              width={30}
-              height={50}
+              width={25}
+              height={42}
               alt="Phone"
               title="Phone"
             />
@@ -87,8 +81,8 @@ export const LayoutHeader: FC = () => {
           <WrapperImg>
             <Image
               src={IMGFollowIcon}
-              width={60}
-              height={60}
+              width={0}
+              height={50}
               alt="Follow"
               title="Follow"
             />
@@ -96,20 +90,20 @@ export const LayoutHeader: FC = () => {
           <FollowInfo>
             <Title>Follow Us</Title>
             <WrapperFollow>
-              <Link href={linkFacebook}>
+              <Link href={linkFacebook} target="_blank">
                 <Image
                   src={IMGFacebook}
-                  width={20}
-                  height={20}
+                  width={12}
+                  height={12}
                   alt="Facebook"
                   title="Facebook"
                 />
               </Link>
-              <Link href={linkLinkedin}>
+              <Link href={linkLinkedin} target="_blank">
                 <Image
                   src={IMGLinkedin}
-                  width={23}
-                  height={23}
+                  width={12}
+                  height={12}
                   alt="Linkedin"
                   title="Linkedin"
                 />

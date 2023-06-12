@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import { StyledFile } from "../styled";
-import { IInputFormField } from "../interfaces";
 
-const FileField: FC<any> = ({ register, errors }: any) => {
+const FileField: FC<any> = ({ register }: any) => {
   return <StyledFile type="file" name="File" register={register} />;
 };
 

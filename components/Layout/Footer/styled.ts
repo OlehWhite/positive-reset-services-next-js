@@ -36,7 +36,7 @@ export const Logo = styled(Box)(() => {
 
 export const IMGLogo = styled(Image)(() => {
   return {
-    maxWidth: 302,
+    maxWidth: 60,
     width: "100%",
     height: 40,
     margin: "2px 0 24px 0",
@@ -64,12 +64,6 @@ export const Contact = styled(Box)(() => {
   return {
     display: "flex",
     justifyContent: "center",
-  };
-});
-
-export const ImgPhone = styled(Image)(() => {
-  return {
-    width: 34,
   };
 });
 

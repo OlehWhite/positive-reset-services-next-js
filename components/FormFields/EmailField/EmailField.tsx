@@ -9,7 +9,7 @@ const EmailField: FC<any> = ({ register, errors }: any) => {
       register={register}
       registerOptions={{
         pattern: {
-          value: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/,
+          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
           message: "Incorrect email format. Example: example@gmail.com",
         },
       }}

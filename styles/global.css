@@ -60,6 +60,10 @@ body {
   height: 100%;
 }
 
+#logo {
+  text-decoration: none;
+}
+
 @media (max-width: 769px) {
   #link {
     display: none;

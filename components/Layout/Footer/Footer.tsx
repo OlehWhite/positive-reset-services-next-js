@@ -5,7 +5,6 @@ import {
   Logo,
   WorkingHours,
   RecentPosts,
-  IMGLogo,
   Text,
   Ul,
   Li,
@@ -39,11 +38,11 @@ import IMGFacebook from "../../../public/facebook-footer.svg";
 import IMGLinkedin from "../../../public/linkedin-footer.svg";
 import IMGAlarmClock from "../../../public/alarm-clock.png";
 import IMGPhoneLogo from "../../../public/silver-mobil.png";
-import IMGLogoFooter from "../../../public/logo.png";
 import IMGTwitter from "../../../public/twitter-footer.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { PRIVATE_DATA } from "../../../otherPages/privateData";
+import LogoImg from "../../LogoImg/LogoImg";
 
 const BASE_MENU = [
   { page: "Home", path: "/" },
@@ -147,7 +146,7 @@ export const Footer: FC = () => {
     <Container>
       <Wrapper>
         <Logo>
-          <IMGLogo src={IMGLogoFooter} alt="Logo" title="Logo" />
+          <LogoImg />
           <TextLogo>
             POSITIVE RESET SERVICES is a successful franchise company that opens
             Mental Health Clinics across Unlined Sates. POSITIVE RESET SERVICES
@@ -235,7 +234,7 @@ export const Footer: FC = () => {
           Copyright © 2021 Vimax LLC. All rights reserved
         </TitleFooter>
         <Links>
-          <Facebook href={linkFacebook}>
+          <Facebook href={linkFacebook} target="_blank">
             <Image
               src={IMGFacebook}
               width={20}
@@ -244,7 +243,7 @@ export const Footer: FC = () => {
               title="Facebook"
             />
           </Facebook>
-          <Twitter href={linkTwitter}>
+          <Twitter href={linkTwitter} target="_blank">
             <Image
               src={IMGTwitter}
               width={20}
@@ -253,7 +252,7 @@ export const Footer: FC = () => {
               title="Twitter"
             />
           </Twitter>
-          <Linkedin href={linkLinkedin}>
+          <Linkedin href={linkLinkedin} target="_blank">
             <Image
               src={IMGLinkedin}
               width={20}

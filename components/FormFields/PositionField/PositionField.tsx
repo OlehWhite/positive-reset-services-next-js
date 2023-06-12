@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import { StyledInput } from "../styled";
-import { IInputFormField } from "../interfaces";
 
 const PositionYouAreApplyingFor: FC<any> = ({ register, errors }: any) => {
   return (
