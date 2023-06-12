@@ -37,7 +37,7 @@ const ModalServices = () => {
 
   return (
     <>
-      <Button onClick={handleOpen} id="white-link">
+      <Button onClick={handleOpen} id="white-footer-link">
         Services
       </Button>
       <Modal open={open} onClose={handleClose}>
@@ -45,7 +45,7 @@ const ModalServices = () => {
           <Ul>
             {DATA_LINKS.map((link) => (
               <Li key={link.path} onClick={() => handleNavClick(link.path)}>
-                <Link href={link.path} passHref id="white-link">
+                <Link href={link.path} passHref id="white-footer-link">
                   {link.name}
                 </Link>
               </Li>

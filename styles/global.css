@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 #link {
@@ -12,6 +12,21 @@ body {
   font-weight: 600;
   cursor: pointer;
   color: #555;
+}
+
+#dark-link {
+  transition: 0.3s;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #555;
+  padding: 6px 0;
+}
+
+#dark-link:hover {
+  color: #3498db;
 }
 
 #link:hover {
@@ -27,6 +42,43 @@ body {
   color: white;
 }
 
+#white-footer-link {
+  transition: 0.3s;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
 #white-link:hover {
   color: #3498db;
+}
+
+@media (max-width: 769px) {
+  #link {
+    display: none;
+  }
+
+  #white-link {
+    display: none;
+  }
+
+  #arrow-off {
+    display: none;
+  }
+}
+
+@media (max-width: 661px) {
+  #img {
+    width: 440px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 476px) {
+  #img {
+    width: 300px;
+    height: 200px;
+  }
 }

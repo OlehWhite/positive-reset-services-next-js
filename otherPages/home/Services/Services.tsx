@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { WrapperVideo, Wrapper, Iframe, WrapperBox } from "./styled";
+import { Wrapper, Iframe, WrapperBox } from "./styled";
 import IMGVideoLogo from "../../../public/video-logo.jpg";
 import { AboutFranchise } from "./AboutFranchise/AboutFranchise";
 import { Box, Modal } from "@mui/material";
@@ -15,8 +15,6 @@ const style = {
   height: 360,
 };
 
-const ID = "video";
-
 export const Services: FC = () => {
   const [openModalWindow, setOpenModalWindow] = useState<boolean>(false);
 
@@ -25,17 +23,16 @@ export const Services: FC = () => {
 
   return (
     <Wrapper>
-      <WrapperVideo>
-        <WrapperBox onClick={handleOpen}>
-          <Image
-            src={IMGVideoLogo}
-            width={643}
-            height={365}
-            alt="Video Logo"
-            title="Video Logo"
-          />
-        </WrapperBox>
-      </WrapperVideo>
+      <WrapperBox onClick={handleOpen}>
+        <Image
+          src={IMGVideoLogo}
+          width={643}
+          height={365}
+          alt="Video Logo"
+          title="Video Logo"
+          id="img"
+        />
+      </WrapperBox>
       <AboutFranchise />
       <Modal
         open={openModalWindow}

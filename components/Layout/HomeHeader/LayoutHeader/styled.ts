@@ -1,5 +1,4 @@
 import { Box, styled } from "@mui/material";
-import Image from "next/image";
 
 export const Wrapper = styled(Box)(() => {
   return {
@@ -59,13 +58,6 @@ export const Follow = styled(Box)(() => {
   };
 });
 
-export const ImgFollow = styled("img")(() => {
-  return {
-    width: 40,
-    height: 40,
-  };
-});
-
 export const Contact = styled(Box)(() => {
   return {
     display: "flex",
@@ -92,7 +84,7 @@ export const WrapperFollow = styled(Box)(() => {
 export const Link = styled("a")(() => {
   return {
     display: "flex",
-    width: 14,
+    justifyContent: "center",
     padding: 5,
     borderRadius: "50%",
     backgroundColor: "#ffffff42",
@@ -104,19 +96,6 @@ export const Link = styled("a")(() => {
       transition: ".3s",
       backgroundColor: "rgba(52,152,219,0.49)",
     },
-  };
-});
-
-export const ImgLogo = styled(Image)(() => {
-  return {
-    width: "100%",
-    maxWidth: 353,
-  };
-});
-
-export const ImgPhone = styled("img")(() => {
-  return {
-    width: 34,
   };
 });
 

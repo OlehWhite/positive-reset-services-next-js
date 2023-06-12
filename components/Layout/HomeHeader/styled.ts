@@ -5,7 +5,6 @@ import Image from "next/image";
 export const HeaderContainer = styled("header")(() => {
   return {
     height: "80vh",
-    overflowX: "hidden",
   };
 });
 

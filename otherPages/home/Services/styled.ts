@@ -4,8 +4,8 @@ export const WrapperBox = styled(Box)(() => {
   return {
     width: "100%",
     maxWidth: 635,
-    border: "4px solid white",
-    boxShadow: "1px 1px 4px 0px silver",
+    height: "100%",
+    maxHeight: 365,
     transition: ".3s",
 
     "&:hover": {
@@ -15,6 +15,11 @@ export const WrapperBox = styled(Box)(() => {
 
     "@media (max-width: 661px)": {
       width: 440,
+      maxWidth: "100%",
+    },
+
+    "@media (max-width: 476px)": {
+      width: 300,
       maxWidth: "100%",
     },
   };

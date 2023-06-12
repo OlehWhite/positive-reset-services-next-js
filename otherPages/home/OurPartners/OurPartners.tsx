@@ -109,6 +109,7 @@ export const OurPartners: FC = () => {
             alt="Left Button"
             title="Left Button"
             onClick={onPrev}
+            id="arrow-off"
           />
           {partners.length > 0 && (
             <Clinicals ref={ref} {...settings}>
@@ -132,6 +133,7 @@ export const OurPartners: FC = () => {
             alt="Right Button"
             title="Right Button"
             onClick={onNext}
+            id="arrow-off"
           />
         </Carusell>
       </Wrapper>

@@ -146,6 +146,7 @@ export const Location: FC = () => {
           alt="Left Button"
           title="Left Button"
           onClick={onPrev}
+          id="arrow-off"
         />
         {post && post.length > 0 && (
           <Clinicals {...settings} ref={ref}>
@@ -188,6 +189,7 @@ export const Location: FC = () => {
           alt="Right Button"
           title="Right Button"
           onClick={onNext}
+          id="arrow-off"
         />
       </Carusell>
     </Container>

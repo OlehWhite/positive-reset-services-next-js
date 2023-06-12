@@ -19,7 +19,9 @@ export const MUIAccordion = () => {
           <Menu>MENU</Menu>
         </AccordionSummary>
         <AccordionDetails sx={{ display: "flex", flexDirection: "column" }}>
-          <Link href="/">HOME</Link>
+          <Link href="/" id="dark-link">
+            HOME
+          </Link>
           <Accordion sx={{ boxShadow: 0 }}>
             <AccordionSummary
               sx={{ padding: 0 }}
@@ -30,25 +32,59 @@ export const MUIAccordion = () => {
               <Menu>SERVICES</Menu>
             </AccordionSummary>
             <AccordionDetails sx={{ display: "flex", flexDirection: "column" }}>
-              <Link href="/how-to-start">How to Start</Link>
-              <Link href="/state-license">State License</Link>
-              <Link href="/training">Training</Link>
-              <Link href="/interview">Interviews</Link>
-              <Link href="/erm">ERM</Link>
-              <Link href="/find-location">Find Location</Link>
-              <Link href="/community-integration">Community Integration</Link>
-              <Link href="/office-layout-setup">Office Layout/Setup</Link>
-              <Link href="/website">Website</Link>
-              <Link href="/appointment-request">Appointment Request</Link>
-              <Link href="/billing-and-insurances">Billing and Insurances</Link>
-              <Link href="/career-opportunities">Career Opportunities</Link>
-              <Link href="/medication-management">Medication Management</Link>
-              <Link href="/child-and-adolescent">Child and Adolescent</Link>
+              <Link href="/how-to-start" id="dark-link">
+                How to Start
+              </Link>
+              <Link href="/state-license" id="dark-link">
+                State License
+              </Link>
+              <Link href="/training" id="dark-link">
+                Training
+              </Link>
+              <Link href="/interview" id="dark-link">
+                Interviews
+              </Link>
+              <Link href="/erm" id="dark-link">
+                ERM
+              </Link>
+              <Link href="/find-location" id="dark-link">
+                Find Location
+              </Link>
+              <Link href="/community-integration" id="dark-link">
+                Community Integration
+              </Link>
+              <Link href="/office-layout-setup" id="dark-link">
+                Office Layout/Setup
+              </Link>
+              <Link href="/website" id="dark-link">
+                Website
+              </Link>
+              <Link href="/appointment-request" id="dark-link">
+                Appointment Request
+              </Link>
+              <Link href="/billing-and-insurances" id="dark-link">
+                Billing and Insurances
+              </Link>
+              <Link href="/career-opportunities" id="dark-link">
+                Career Opportunities
+              </Link>
+              <Link href="/medication-management" id="dark-link">
+                Medication Management
+              </Link>
+              <Link href="/child-and-adolescent" id="dark-link">
+                Child and Adolescent
+              </Link>
             </AccordionDetails>
           </Accordion>
-          <Link href="/telehealth">TELEHEALTH</Link>
-          <Link href="/about-us">ABOUT US</Link>
-          <Link href="/contact-us">CONTACT US</Link>
+          <Link href="/telehealth" id="dark-link">
+            TELEHEALTH
+          </Link>
+          <Link href="/about-us" id="dark-link">
+            ABOUT US
+          </Link>
+          <Link href="/contact-us" id="dark-link">
+            CONTACT US
+          </Link>
         </AccordionDetails>
       </Accordion>
     </Box>

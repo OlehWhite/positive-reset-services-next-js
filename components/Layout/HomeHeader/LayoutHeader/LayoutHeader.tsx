@@ -87,8 +87,8 @@ export const LayoutHeader: FC = () => {
           <WrapperImg>
             <Image
               src={IMGFollowIcon}
-              width={55}
-              height={55}
+              width={60}
+              height={60}
               alt="Follow"
               title="Follow"
             />

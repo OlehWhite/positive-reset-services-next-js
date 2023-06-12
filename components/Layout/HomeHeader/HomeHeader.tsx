@@ -117,6 +117,7 @@ export const HomeHeader = () => {
           alt="Left Button"
           title="Left Button"
           onClick={onPrev}
+          id="arrow-off"
         />
         <Image
           src={IMGRight}
@@ -125,6 +126,7 @@ export const HomeHeader = () => {
           alt="Right Button"
           title="Right Button"
           onClick={onNext}
+          id="arrow-off"
         />
       </Buttons>
     </HeaderContainer>

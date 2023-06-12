@@ -176,7 +176,7 @@ export const Footer: FC = () => {
             {BASE_MENU.map((link, index) => (
               <Li key={index}>
                 {link.page !== "Services" ? (
-                  <Link href={link.path} passHref id="white-link">
+                  <Link href={link.path} passHref id="white-footer-link">
                     {link.page}
                   </Link>
                 ) : (

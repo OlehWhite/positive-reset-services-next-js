@@ -123,6 +123,7 @@ export const AboutFranchising: FC = () => {
           alt="Left Button"
           title="Left Button"
           onClick={onPrev}
+          id="arrow-off"
         />
         {posts.length > 0 && (
           <Clinicals ref={ref} {...settings}>
@@ -159,6 +160,7 @@ export const AboutFranchising: FC = () => {
           alt="Right Button"
           title="Right Button"
           onClick={onNext}
+          id="arrow-off"
         />
       </Carusell>
     </Container>
