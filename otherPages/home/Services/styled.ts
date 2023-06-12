@@ -7,6 +7,7 @@ export const WrapperBox = styled(Box)(() => {
     height: "100%",
     maxHeight: 365,
     transition: ".3s",
+    cursor: "pointer",
 
     "&:hover": {
       transition: ".3s",
@@ -43,6 +44,7 @@ export const WrapperVideo = styled(Box)(() => {
   return {
     display: "flex",
     cursor: "pointer",
+    marginRight: 26,
 
     "&:hover": {
       background: "white",
@@ -50,9 +52,4 @@ export const WrapperVideo = styled(Box)(() => {
       boxShadow: "0px 0px 20px 10px silver",
     },
   };
-});
-
-export const Iframe = styled("iframe")({
-  width: "100%",
-  height: "100%",
 });

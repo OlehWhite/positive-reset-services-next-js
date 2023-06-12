@@ -7,6 +7,7 @@ export const VideoLogo = styled(Box)(() => {
     height: "100%",
     maxHeight: 320,
     transition: ".3s",
+    cursor: "pointer",
 
     "&:hover": {
       transition: ".3s",

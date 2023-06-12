@@ -54,10 +54,10 @@ const CareerOpportunities = () => {
           <Block>
             <Box>
               <Image
-                id="image"
-                width={630}
-                height={418}
+                width={635}
+                height={421}
                 src={IMGOne}
+                id="img"
                 alt="GROW WITH THE TEAM THAT PUTS PATIENTS FIRST"
                 title="GROW WITH THE TEAM THAT PUTS PATIENTS FIRST"
               />

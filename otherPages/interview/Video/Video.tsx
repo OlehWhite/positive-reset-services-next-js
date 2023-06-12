@@ -1,6 +1,6 @@
-import { WrapperVideo } from "../../home/Services/styled";
+import { WrapperBox, WrapperVideo } from "../../home/Services/styled";
 import IMGVideoLogo from "../../../public/Interview-Video02.jpg";
-import { Box, Modal } from "@mui/material";
+import { Modal } from "@mui/material";
 import React, { useState } from "react";
 import Image from "next/image";
 
@@ -38,16 +38,16 @@ export const Video = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <iframe
-            title="YouTube Video"
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/Son1_1rKEz8"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
+        <WrapperBox sx={style}>
+          <video
+            width={650}
+            controls
+            autoPlay
+            muted
+            loop
+            src="/PRS Interview.mp4"
           />
-        </Box>
+        </WrapperBox>
       </Modal>
     </>
   );

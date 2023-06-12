@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/home/Location/AsideClinic/AsideClinic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Location/AsideClinic/AsideClinic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/home/Location/AsideClinic/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Location/AsideClinic/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Services/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Services/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Services/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/interview/Video/Video.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/interview/Video/Video.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/website/VideoPost/VideoPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/website/VideoPost/VideoPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/website/VideoPost/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/website/VideoPost/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/career-opportunities.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/career-opportunities.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +63,7 @@
       <workItem from="1686479422459" duration="14000" />
       <workItem from="1686479440144" duration="11413000" />
       <workItem from="1686563435305" duration="2149000" />
-      <workItem from="1686567593527" duration="10962000" />
+      <workItem from="1686567593527" duration="12837000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1686480218770</created>
@@ -215,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686589950255</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update">
+      <created>1686590465571</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1686590465571</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
