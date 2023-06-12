@@ -26,7 +26,10 @@ const HowToStart = () => {
         <title>Positive Reset Services - Call Today | How to Start</title>
         <meta name="description" content="HOW TO START" />
         <meta name="description2" content="HOW TO START A FRANCHISING" />
-        <meta name="description3" content="GREAT OPPORTUNITY FROM THE MENTAL HEALTH FRANCHISE" />
+        <meta
+          name="description3"
+          content="GREAT OPPORTUNITY FROM THE MENTAL HEALTH FRANCHISE"
+        />
       </Head>
       <OtherHeader />
       <Main>
@@ -41,6 +44,7 @@ const HowToStart = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 src={IMGLogo}
                 width={630}
                 height={378}
@@ -81,6 +85,7 @@ const HowToStart = () => {
             </WrapperBlock>
             <Box>
               <Image
+                id="image"
                 src={IMGGrate}
                 width={630}
                 height={354}

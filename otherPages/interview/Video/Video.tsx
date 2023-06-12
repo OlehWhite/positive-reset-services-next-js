@@ -24,6 +24,7 @@ export const Video = () => {
     <>
       <WrapperVideo onClick={handleOpen}>
         <Image
+          id="image"
           width={643}
           height={365}
           src={IMGVideoLogo}

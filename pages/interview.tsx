@@ -33,12 +33,24 @@ const Interview = () => {
         <meta name="description" content="INTERVIEW" />
         <meta name="description2" content="HOW TO CONDUCT A JOB INTERVIEW?" />
         <meta name="description3" content="WHAT IS A JOB INTERVIEW?" />
-        <meta name="description4" content="PREPARE QUESTIONS FOR A JOB INTERVIEW" />
-        <meta name="description5" content="YOU CAN CONDUCT A JOB INTERVIEW USING THE FOLLOWING STEPS:" />
-        <meta name="description6" content="COMMON TYPES OF INTERVIEWING STRATEGIES" />
+        <meta
+          name="description4"
+          content="PREPARE QUESTIONS FOR A JOB INTERVIEW"
+        />
+        <meta
+          name="description5"
+          content="YOU CAN CONDUCT A JOB INTERVIEW USING THE FOLLOWING STEPS:"
+        />
+        <meta
+          name="description6"
+          content="COMMON TYPES OF INTERVIEWING STRATEGIES"
+        />
         <meta name="description7" content="CHOOSE YOUR INTERVIEWER CAREFULLY" />
         <meta name="description8" content="PREPARE CREATIVE QUESTIONS" />
-        <meta name="description9" content="QUESTIONS TO AVOID WHEN CONDUCTING INTERVIEWS:" />
+        <meta
+          name="description9"
+          content="QUESTIONS TO AVOID WHEN CONDUCTING INTERVIEWS:"
+        />
       </Head>
       <OtherHeader />
       <Main>
@@ -83,6 +95,7 @@ const Interview = () => {
             </WrapperBlock>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={330}
                 src={IMGTwo}
@@ -94,6 +107,7 @@ const Interview = () => {
           <Block>
             <Box sx={{ margin: "0 auto" }}>
               <Image
+                id="image"
                 width={300}
                 height={300}
                 src={IMGThree}
@@ -130,6 +144,7 @@ const Interview = () => {
             </WrapperBlock>
             <Box>
               <Image
+                id="image"
                 width={500}
                 height={200}
                 src={IMGFour}
@@ -141,6 +156,7 @@ const Interview = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 width={500}
                 height={300}
                 src={IMGFive}
@@ -174,6 +190,7 @@ const Interview = () => {
             </WrapperBlock>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={251}
                 src={IMGSix}

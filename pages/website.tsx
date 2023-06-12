@@ -29,11 +29,26 @@ const Website = () => {
       <Head>
         <title>Positive Reset Services - Call Today | Website</title>
         <meta name="description" content="WEBSITE" />
-        <meta name="description2" content="YOU GET A GREAT LOOKING FRANCHISE WEBSITE THAT EXCEEDS YOUR EXPECTATIONS." />
-        <meta name="description3" content="WHY FRANCHISE OWNERS LOVE OUR WEBSITE?" />
-        <meta name="description4" content="YOU ARE NOT ALONE IN THIS DIFFICULT WORLD OF THE INTERNET AND WEB TECHNOLOGIES." />
-        <meta name="description5" content="RECOGNITION, POPULARITY AND ACCESSIBILITY IN THE ONLINE COMMUNITY IS THE KEY TO SUCCESS." />
-        <meta name="description6" content="WHAT MAKES A FRANCHISE WEBSITE EFFECTIVE?" />
+        <meta
+          name="description2"
+          content="YOU GET A GREAT LOOKING FRANCHISE WEBSITE THAT EXCEEDS YOUR EXPECTATIONS."
+        />
+        <meta
+          name="description3"
+          content="WHY FRANCHISE OWNERS LOVE OUR WEBSITE?"
+        />
+        <meta
+          name="description4"
+          content="YOU ARE NOT ALONE IN THIS DIFFICULT WORLD OF THE INTERNET AND WEB TECHNOLOGIES."
+        />
+        <meta
+          name="description5"
+          content="RECOGNITION, POPULARITY AND ACCESSIBILITY IN THE ONLINE COMMUNITY IS THE KEY TO SUCCESS."
+        />
+        <meta
+          name="description6"
+          content="WHAT MAKES A FRANCHISE WEBSITE EFFECTIVE?"
+        />
       </Head>
       <OtherHeader />
       <Box>
@@ -61,6 +76,7 @@ const Website = () => {
             </Info>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={355}
                 src={IMGOne}
@@ -72,6 +88,7 @@ const Website = () => {
           <Post>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={356}
                 src={IMGTwo}
@@ -107,6 +124,7 @@ const Website = () => {
           <Post>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={325}
                 src={IMGThree}
@@ -145,6 +163,7 @@ const Website = () => {
             </Info>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={396}
                 src={IMGFour}

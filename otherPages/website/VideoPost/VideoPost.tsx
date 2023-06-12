@@ -24,7 +24,14 @@ export const VideoPost = () => {
     <>
       <Wrapper>
         <VideoLogo onClick={handleOpen}>
-          <Image src={IMGVideoLogo} alt="Video Logo" title="Video Logo" />
+          <Image
+            id="img"
+            width={563}
+            height={320}
+            src={IMGVideoLogo}
+            alt="Video Logo"
+            title="Video Logo"
+          />
         </VideoLogo>
         <Modal
           open={openModalWindow}

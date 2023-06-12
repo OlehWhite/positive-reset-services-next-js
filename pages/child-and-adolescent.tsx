@@ -19,7 +19,9 @@ const ChildAndAdolescent = () => {
   return (
     <>
       <Head>
-        <title>Positive Reset Services - Call Today | Child and Adolescent</title>
+        <title>
+          Positive Reset Services - Call Today | Child and Adolescent
+        </title>
         <meta name="description" content="CHILD AND ADOLESCENT" />
       </Head>
       <OtherHeader />
@@ -35,6 +37,7 @@ const ChildAndAdolescent = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={323}
                 src={IMGOne}

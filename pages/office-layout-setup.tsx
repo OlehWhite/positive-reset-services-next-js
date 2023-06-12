@@ -22,10 +22,15 @@ const OfficeLayoutSetup = () => {
   return (
     <>
       <Head>
-        <title>Positive Reset Services - Call Today | Office Layout Setup</title>
+        <title>
+          Positive Reset Services - Call Today | Office Layout Setup
+        </title>
         <meta name="description" content="OFFICE LAYOUT/SETUP" />
         <meta name="description2" content="BEFORE YOU START" />
-        <meta name="description3" content="MAKE A LIST OF EVERYTHING YOU NEED" />
+        <meta
+          name="description3"
+          content="MAKE A LIST OF EVERYTHING YOU NEED"
+        />
         <meta name="description4" content="DESIGN YOUR OFFICE FLOOR PLAN" />
         <meta name="description5" content="4 POINTS THAT ARE VERY IMPORTANT" />
       </Head>
@@ -60,6 +65,7 @@ const OfficeLayoutSetup = () => {
             </Info>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={468}
                 src={IMGOne}
@@ -71,6 +77,7 @@ const OfficeLayoutSetup = () => {
           <Post>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={351}
                 src={IMGTwo}
@@ -108,6 +115,7 @@ const OfficeLayoutSetup = () => {
             </Info>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={294}
                 src={IMGThree}

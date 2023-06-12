@@ -20,7 +20,9 @@ const BillingAndInsurances = () => {
   return (
     <>
       <Head>
-        <title>Positive Reset Services - Call Today | Billing and Insurances</title>
+        <title>
+          Positive Reset Services - Call Today | Billing and Insurances
+        </title>
         <meta name="description" content="BILLING AND INSURANCES" />
         <meta name="description2" content="FINANCIAL RESOURCES" />
       </Head>
@@ -37,6 +39,7 @@ const BillingAndInsurances = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={419}
                 src={IMGOne}
@@ -75,6 +78,7 @@ const BillingAndInsurances = () => {
             </WrapperBlock>
             <Box>
               <Image
+                id="image"
                 width={500}
                 height={750}
                 src={IMGTwo}

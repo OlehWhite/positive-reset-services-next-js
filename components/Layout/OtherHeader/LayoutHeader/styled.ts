@@ -92,7 +92,7 @@ export const WrapperFollow = styled(Box)(() => {
 export const Link = styled("a")(() => {
   return {
     display: "flex",
-    width: 14,
+    justifyContent: "center",
     padding: 5,
     borderRadius: "50%",
     backgroundColor: "rgb(95,95,95)",

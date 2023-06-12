@@ -21,7 +21,9 @@ const MedicationManagement = () => {
   return (
     <>
       <Head>
-        <title>Positive Reset Services - Call Today | Medication Management</title>
+        <title>
+          Positive Reset Services - Call Today | Medication Management
+        </title>
         <meta name="description" content="MEDICATION MANAGEMENT" />
       </Head>
       <OtherHeader />
@@ -37,6 +39,7 @@ const MedicationManagement = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={230}
                 src={IMGOne}
@@ -76,6 +79,7 @@ const MedicationManagement = () => {
             </WrapperBlock>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={354}
                 src={IMGTwo}
@@ -87,6 +91,7 @@ const MedicationManagement = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={384}
                 src={IMGThree}

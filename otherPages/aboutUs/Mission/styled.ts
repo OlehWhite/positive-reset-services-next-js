@@ -34,13 +34,16 @@ export const WrapperVideo = styled(Box)(() => {
   };
 });
 
-export const WrapperBlock = styled("div")(() => {
+export const WrapperBlock = styled(Box)(() => {
   return {
+    display: "flex",
+    justifyContent: "center",
     width: "100%",
     maxWidth: 635,
-    border: "4px solid white",
-    boxShadow: "1px 1px 4px 0px silver",
+    height: "100%",
+    maxHeight: 365,
     transition: ".3s",
+    marginBottom: 20,
 
     "&:hover": {
       transition: ".3s",

@@ -106,6 +106,7 @@ export const InfoBlock = () => {
         </Info>
         <WrapperPicture>
           <Image
+            id="image"
             src={IMGGirl}
             width={528}
             height={660}

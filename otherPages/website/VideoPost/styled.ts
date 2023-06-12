@@ -1,14 +1,12 @@
 import { Box, styled } from "@mui/material";
 
-export const VideoLogo = styled("div")(() => {
+export const VideoLogo = styled(Box)(() => {
   return {
     width: "100%",
-    maxWidth: 635,
-    border: "4px solid white",
-    boxShadow: "1px 1px 4px 0px silver",
+    maxWidth: 563,
+    height: "100%",
+    maxHeight: 320,
     transition: ".3s",
-    boxSizing: "border-box",
-    cursor: 'pointer',
 
     "&:hover": {
       transition: ".3s",
@@ -35,16 +33,6 @@ export const Wrapper = styled(Box)(() => {
     "@media (max-width: 1335px)": {
       flexDirection: "column",
       alignItems: "center",
-    },
-  };
-});
-
-export const WrapperVideo = styled(Box)(() => {
-  return {
-    cursor: "pointer",
-
-    "&:hover": {
-      background: "white",
     },
   };
 });

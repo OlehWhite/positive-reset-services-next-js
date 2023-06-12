@@ -42,6 +42,7 @@ const FindLocation = () => {
           <Post>
             <Box>
               <Image
+                id="image"
                 width={480}
                 height={267}
                 src={IMGOne}
@@ -77,6 +78,7 @@ const FindLocation = () => {
             </Info>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={296}
                 src={IMGTwo}
@@ -88,6 +90,7 @@ const FindLocation = () => {
           <Post>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={336}
                 src={IMGThree}
@@ -120,6 +123,7 @@ const FindLocation = () => {
             </Info>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={416}
                 src={IMGFour}

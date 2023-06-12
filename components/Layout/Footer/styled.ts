@@ -38,6 +38,7 @@ export const IMGLogo = styled(Image)(() => {
   return {
     maxWidth: 302,
     width: "100%",
+    height: 40,
     margin: "2px 0 24px 0",
   };
 });

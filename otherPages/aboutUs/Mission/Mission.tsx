@@ -1,4 +1,4 @@
-import { Container, Wrapper, WrapperBlock, WrapperVideo } from "./styled";
+import { Container, Wrapper, WrapperBlock } from "./styled";
 import IMGVideoLogo from "../../../public/video-logo.jpg";
 import OurMission from "../../../components/OurMission/OurMission";
 import { Box, Modal } from "@mui/material";
@@ -24,18 +24,17 @@ export const Mission = () => {
   return (
     <Container>
       <Wrapper>
-        <WrapperVideo>
-          <WrapperBlock>
-            <Image
-              onClick={handleOpen}
-              src={IMGVideoLogo}
-              width={643}
-              height={365}
-              alt="Video Logo"
-              title="Video Logo"
-            />
-          </WrapperBlock>
-        </WrapperVideo>
+        <WrapperBlock>
+          <Image
+            onClick={handleOpen}
+            src={IMGVideoLogo}
+            width={643}
+            height={365}
+            alt="Video Logo"
+            title="Video Logo"
+            id="img"
+          />
+        </WrapperBlock>
         <OurMission />
       </Wrapper>
       <Modal

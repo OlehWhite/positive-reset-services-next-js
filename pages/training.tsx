@@ -44,6 +44,7 @@ const Training = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 src={IMGThee}
                 width={630}
                 height={419}
@@ -77,6 +78,7 @@ const Training = () => {
             </WrapperBlock>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={354}
                 src={IMGTwo}
@@ -88,6 +90,7 @@ const Training = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={330}
                 src={IMGOne}
@@ -112,6 +115,7 @@ const Training = () => {
             </WrapperBlock>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={380}
                 src={IMGFour}

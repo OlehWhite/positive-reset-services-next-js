@@ -32,9 +32,14 @@ const CareerOpportunities = () => {
   return (
     <>
       <Head>
-        <title>Positive Reset Services - Call Today | Career Opportunities</title>
+        <title>
+          Positive Reset Services - Call Today | Career Opportunities
+        </title>
         <meta name="description" content="CAREER OPPORTUNITIES" />
-        <meta name="description2" content="GROW WITH THE TEAM THAT PUTS PATIENTS FIRST" />
+        <meta
+          name="description2"
+          content="GROW WITH THE TEAM THAT PUTS PATIENTS FIRST"
+        />
       </Head>
       <OtherHeader />
       <Box>
@@ -49,6 +54,7 @@ const CareerOpportunities = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={418}
                 src={IMGOne}
@@ -87,6 +93,7 @@ const CareerOpportunities = () => {
             </WrapperBlock>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={417}
                 src={IMGTwo}

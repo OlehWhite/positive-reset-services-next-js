@@ -24,7 +24,10 @@ const Erm = () => {
       <Head>
         <title>Positive Reset Services - Call Today | ERM</title>
         <meta name="description" content="ERM COMPLETE" />
-        <meta name="description2" content="WHAT IS MENTAL HEALTH EMR COMPLETE?" />
+        <meta
+          name="description2"
+          content="WHAT IS MENTAL HEALTH EMR COMPLETE?"
+        />
         <meta name="description3" content="WHY YOU NEED EMR COMPLETE?" />
         <meta name="description4" content="OPTIMIZE SERVICES" />
       </Head>
@@ -41,6 +44,7 @@ const Erm = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={247}
                 src={IMGOne}
@@ -85,6 +89,7 @@ const Erm = () => {
             </WrapperBlock>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={419}
                 src={IMGTwo}
@@ -96,6 +101,7 @@ const Erm = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 width={630}
                 height={354}
                 src={IMGThree}

@@ -25,12 +25,20 @@ const CommunityIntegration = () => {
   return (
     <>
       <Head>
-        <title>Positive Reset Services - Call Today | Community Integration</title>
+        <title>
+          Positive Reset Services - Call Today | Community Integration
+        </title>
         <meta name="description" content="COMMUNITY INTEGRATION" />
         <meta name="description2" content="OUR RESEARCH ON HUMAN INTEGRATION" />
-        <meta name="description3" content="HOW POSITIVE RESET SERVICES CAN PROMOTE MENTAL HEALTH COMMUNITY INTEGRATION?" />
+        <meta
+          name="description3"
+          content="HOW POSITIVE RESET SERVICES CAN PROMOTE MENTAL HEALTH COMMUNITY INTEGRATION?"
+        />
         <meta name="description4" content="EXPERIENCE OF OUR PARTNERS" />
-        <meta name="description5" content="THREE OBSERVABLE TRENDS EMERGING ACROSS THE INDUSTRY" />
+        <meta
+          name="description5"
+          content="THREE OBSERVABLE TRENDS EMERGING ACROSS THE INDUSTRY"
+        />
       </Head>
       <OtherHeader />
       <Box>
@@ -45,6 +53,7 @@ const CommunityIntegration = () => {
           <Post>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={398}
                 src={IMGOne}
@@ -90,6 +99,7 @@ const CommunityIntegration = () => {
             </Info>
             <Box>
               <Image
+                id="image"
                 width={512}
                 height={333}
                 src={IMGTwo}
@@ -101,6 +111,7 @@ const CommunityIntegration = () => {
           <Post>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={414}
                 src={IMGFour}
@@ -133,6 +144,7 @@ const CommunityIntegration = () => {
             </Info>
             <Box>
               <Image
+                id="image"
                 width={625}
                 height={285}
                 src={IMGThree}

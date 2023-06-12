@@ -27,7 +27,10 @@ const StateLicense = () => {
         <meta name="description" content="STATE LICENSE" />
         <meta name="description2" content="GETTING STATE LICENSE" />
         <meta name="description3" content="UNIVERSAL SYSTEM" />
-        <meta name="description4" content="LICENSE OF BEHAVIORAL HEALTH CLINIC | HOW CAN WE HELP?" />
+        <meta
+          name="description4"
+          content="LICENSE OF BEHAVIORAL HEALTH CLINIC | HOW CAN WE HELP?"
+        />
       </Head>
       <OtherHeader />
       <Main>
@@ -42,6 +45,7 @@ const StateLicense = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 src={IMGThee}
                 width={630}
                 height={415}
@@ -73,6 +77,7 @@ const StateLicense = () => {
             </WrapperBlock>
             <Box>
               <Image
+                id="image"
                 src={IMGOne}
                 width={630}
                 height={387}
@@ -84,6 +89,7 @@ const StateLicense = () => {
           <Block>
             <Box>
               <Image
+                id="image"
                 src={IMGTwo}
                 width={630}
                 height={315}
