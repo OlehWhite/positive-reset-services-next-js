@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from "react";
 import { Box } from "@mui/material";
 import { useRouter } from "next/router";
-import { Container, Wrapper, Nav, WrapperMenu, WrapperSidebar } from "./styled";
+import { Container, Wrapper, WrapperMenu, WrapperSidebar } from "./styled";
 import { BASE_NAV } from "./constants";
 import { MUIAccordion } from "../../../MUIAccordion/MUIAccordion";
 import Link from "next/link";
@@ -49,20 +49,14 @@ export const LayoutNavHed: FC = () => {
               {link.name === "SERVICES" ? (
                 <Services />
               ) : (
-                <Link href={link.path} passHref>
-                  <Nav
-                    onClick={() => handleNavClick(link.path)}
-                    style={{
-                      color: currentPath === link.path ? "#3498db" : "white",
-                      transition: ".3s",
-                      marginRight: "20px",
-                      textDecoration: "none",
-                      fontSize: 14,
-                      fontWeight: 600,
-                    }}
-                  >
-                    {link.name}
-                  </Nav>
+                <Link
+                  href={link.path}
+                  passHref
+                  onClick={() => handleNavClick(link.path)}
+                  style={{}}
+                  id="white-link"
+                >
+                  {link.name}
                 </Link>
               )}
             </Box>

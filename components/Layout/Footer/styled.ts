@@ -154,7 +154,7 @@ export const Li = styled("li")(() => {
   };
 });
 
-export const Nav = styled("a")(() => {
+export const Nav = styled(Link)(() => {
   return {
     color: "white",
     textDecoration: "none",

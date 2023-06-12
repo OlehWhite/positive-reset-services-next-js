@@ -1,6 +1,6 @@
 import { MUIButton, Container } from "./styled";
 import { DATA_LINKS } from "./constants";
-import { Ul, Li, Nav } from "./styled";
+import { Ul, Li } from "./styled";
 import Menu from "@mui/material/Menu";
 import * as React from "react";
 import { FC } from "react";
@@ -45,8 +45,8 @@ export const Services: FC<TServices> = ({ color }) => {
         <Ul>
           {DATA_LINKS.map((link, index) => (
             <Li key={index} onClick={handleClose}>
-              <Link href={link.path} passHref>
-                <Nav>{link.name}</Nav>
+              <Link href={link.path} passHref id="link">
+                {link.name}
               </Link>
             </Li>
           ))}

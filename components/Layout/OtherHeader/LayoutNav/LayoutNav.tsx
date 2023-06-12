@@ -1,4 +1,4 @@
-import { Container, Wrapper, Nav, WrapperSidebar } from "./styled";
+import { Container, Wrapper, WrapperSidebar } from "./styled";
 import { FC, useState } from "react";
 import { Box } from "@mui/material";
 import { BASE_NAV } from "./constants";
@@ -33,15 +33,14 @@ export const LayoutNav: FC = () => {
               {link.name === "SERVICES" ? (
                 <Services color={"#555"} />
               ) : (
-                <Link key={index} href={link.path} passHref>
-                  <Nav
-                    onClick={() => handleNavClick(link.path)}
-                    sx={{
-                      color: currentPath === link.path ? "#3498db" : "#555",
-                    }}
-                  >
-                    {link.name}
-                  </Nav>
+                <Link
+                  key={index}
+                  href={link.path}
+                  passHref
+                  onClick={() => handleNavClick(link.path)}
+                  id="link"
+                >
+                  {link.name}
                 </Link>
               )}
             </Box>

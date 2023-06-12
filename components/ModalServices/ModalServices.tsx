@@ -1,4 +1,4 @@
-import { Button, Ul, Li, Nav } from "./styled";
+import { Button, Ul, Li } from "./styled";
 import { Box, Modal } from "@mui/material";
 import { useState } from "react";
 import { useRouter } from "next/router";
@@ -37,14 +37,16 @@ const ModalServices = () => {
 
   return (
     <>
-      <Button onClick={handleOpen}>Services</Button>
+      <Button onClick={handleOpen} id="white-link">
+        Services
+      </Button>
       <Modal open={open} onClose={handleClose}>
         <Box sx={{ ...style, width: "100%", maxWidth: 200 }}>
           <Ul>
-            {DATA_LINKS.map((link, index) => (
+            {DATA_LINKS.map((link) => (
               <Li key={link.path} onClick={() => handleNavClick(link.path)}>
-                <Link href={link.path} passHref>
-                  <Nav>{link.name}</Nav>
+                <Link href={link.path} passHref id="white-link">
+                  {link.name}
                 </Link>
               </Li>
             ))}

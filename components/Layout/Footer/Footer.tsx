@@ -7,7 +7,6 @@ import {
   RecentPosts,
   IMGLogo,
   Text,
-  Nav,
   Ul,
   Li,
   WrapperPost,
@@ -144,13 +143,6 @@ export const Footer: FC = () => {
       .then((response: any) => setWorkingHours(response.data.items));
   }, []);
 
-  const handleMenuClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <Container>
       <Wrapper>
@@ -184,8 +176,8 @@ export const Footer: FC = () => {
             {BASE_MENU.map((link, index) => (
               <Li key={index}>
                 {link.page !== "Services" ? (
-                  <Link href={link.path} passHref>
-                    <Nav>{link.page}</Nav>
+                  <Link href={link.path} passHref id="white-link">
+                    {link.page}
                   </Link>
                 ) : (
                   <ModalServices />

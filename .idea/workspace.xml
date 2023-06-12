@@ -2,15 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/LayoutNavHed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/LayoutNavHed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/LayoutNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/LayoutNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MUIAccordion/MUIAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MUIAccordion/MUIAccordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ModalServices/ModalServices.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ModalServices/ModalServices.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Services/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next-env.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,19 +40,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/oleh.white/Desktop/my-app&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\oleh.white\\Desktop\\positive-reset-clinic-next-js\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/oleh.white/Desktop/my-app",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\oleh.white\\AppData\\Roaming\\npm\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\oleh.white\\Desktop\\positive-reset-clinic-next-js\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="" />
@@ -46,7 +69,7 @@
       <workItem from="1686479422459" duration="14000" />
       <workItem from="1686479440144" duration="11413000" />
       <workItem from="1686563435305" duration="2149000" />
-      <workItem from="1686567593527" duration="787000" />
+      <workItem from="1686567593527" duration="5027000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1686480218770</created>
@@ -160,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686496477718</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update">
+      <created>1686568437417</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686568437417</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
