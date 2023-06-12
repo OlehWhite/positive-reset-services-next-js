@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/aboutUs/Mission/Mission.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/aboutUs/Mission/Mission.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/aboutUs/Mission/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/aboutUs/Mission/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/careerOpportunities/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/careerOpportunities/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/communityIntegration/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/communityIntegration/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/home/AboutFranchising/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/AboutFranchising/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/home/Location/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Location/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/home/MotivationalQuotes/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/MotivationalQuotes/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/home/OurPartners/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/OurPartners/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/howToStart/infoBlock/infoBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/howToStart/infoBlock/infoBlock.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/howToStart/infoBlock/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/howToStart/infoBlock/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/interview/Video/Video.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/interview/Video/Video.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/officeLayoutSetup/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/officeLayoutSetup/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/website/VideoPost/VideoPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/website/VideoPost/VideoPost.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/website/VideoPost/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/website/VideoPost/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/billing-and-insurances.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/billing-and-insurances.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/career-opportunities.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/career-opportunities.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/child-and-adolescent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/child-and-adolescent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/community-integration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/community-integration.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/erm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/erm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/find-location.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/find-location.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/how-to-start.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/how-to-start.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/interview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/interview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/medication-management.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/medication-management.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/office-layout-setup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/office-layout-setup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/state-license.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/state-license.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/training.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/training.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/website.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/website.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.css" afterDir="false" />
-    </list>
+    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +54,7 @@
       <workItem from="1686479422459" duration="14000" />
       <workItem from="1686479440144" duration="11413000" />
       <workItem from="1686563435305" duration="2149000" />
-      <workItem from="1686567593527" duration="10291000" />
+      <workItem from="1686567593527" duration="10453000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1686480218770</created>
@@ -221,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686579763575</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update">
+      <created>1686589781384</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686589781384</updated>
+    </task>
+    <task id="LOCAL-00021" summary="update">
+      <created>1686589787698</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1686589787698</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
