@@ -62,16 +62,6 @@ export const Info = styled(Box)(() => {
   };
 });
 
-export const UnderText = styled(Box)(() => {
-  return {
-    "@media (max-width: 1070px)": {
-      width: "100%",
-      maxWidth: 600,
-      margin: "0 auto",
-    },
-  };
-});
-
 export const Text = styled("p")(() => {
   return {
     fontSize: 16,

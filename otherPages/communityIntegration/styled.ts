@@ -56,13 +56,6 @@ export const Img = styled("img")(() => {
   };
 });
 
-export const ImgLow = styled("img")(() => {
-  return {
-    maxWidth: 85,
-    borderRadius: "50px",
-  };
-});
-
 export const Post = styled(Box)(() => {
   return {
     display: "flex",

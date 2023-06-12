@@ -96,22 +96,6 @@ export const InputWrapper = styled(Box)(() => {
   };
 });
 
-export const TextField = styled("textarea")(() => {
-  return {
-    maxWidth: 1300,
-    width: "100%",
-    padding: "10px 10px 120px 10px",
-    fontSize: 16,
-    boxSizing: "border-box",
-    fontFamily: "Open sans",
-    resize: "none",
-    overflow: "hidden",
-    border: `1px solid #eae9e9`,
-    backgroundColor: "#f7f7f7",
-    color: "#626262",
-  };
-});
-
 export const StyledForm = styled("form")(() => {
   return {
     maxWidth: 1300,

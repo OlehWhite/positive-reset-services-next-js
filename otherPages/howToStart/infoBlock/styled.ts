@@ -38,13 +38,6 @@ export const WrapperPicture = styled(Box)(() => {
   };
 });
 
-export const Picture = styled("img")(() => {
-  return {
-    maxWidth: 528,
-    width: "100%",
-  };
-});
-
 export const Post = styled(Box)(() => {
   return {
     display: "flex",
