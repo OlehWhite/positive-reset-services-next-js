@@ -14,12 +14,12 @@ import {
 } from "./styled";
 import React, { FC, useEffect, useState } from "react";
 import axios from "axios";
-import Image from "next/image";
-import IMGPhoneLogo from "../../../../public/public/silver-mobil.png";
+import IMGPhoneLogo from "../../../../public/silver-mobil.png";
 import IMGFollowIcon from "../../../../public/silver-follow-icon.png";
-import { PRIVATE_DATA } from "../../../../otherPages/privateData";
 import IMGFacebook from "../../../../public/facebook-icon.svg";
 import IMGLinkedin from "../../../../public/linkedin-icon.svg";
+import Image from "next/image";
+import { PRIVATE_DATA } from "../../../../otherPages/privateData";
 import LogoImgDark from "../../../LogoImgDark/LogoImgDark";
 
 const ID = "telephoneNumber";

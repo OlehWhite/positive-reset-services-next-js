@@ -24,7 +24,10 @@ const Following = () => {
             <TypographyText paragraph>
               Prepare for the upcoming interview by evaluating the position
               you’re hiring for and{" "}
-              <Link href="https://www.indeed.com/hire/c/info/how-to-read-a-resume?hl=en&co=US">
+              <Link
+                href="https://www.indeed.com/hire/c/info/how-to-read-a-resume?hl=en&co=US"
+                target="_blank"
+              >
                 going over the candidate’s resume
               </Link>{" "}
               and/or cover letter. Consider what needs the role will fill for
@@ -48,7 +51,10 @@ const Following = () => {
               overview of the company and how the position they’re interviewing
               for fits into the organization’s objectives and goals. This gives
               job candidates an opportunity to better understand the{" "}
-              <Link href="https://www.indeed.com/hire/c/info/employee-expectations?hl=en">
+              <Link
+                href="https://www.indeed.com/hire/c/info/employee-expectations?hl=en"
+                target="_blank"
+              >
                 expectations and responsibilities
               </Link>{" "}
               of the position.
@@ -67,7 +73,10 @@ const Following = () => {
               interview process, including its format, how many people will be
               interviewing them, the expected length and whether or not the
               company expects them to complete{" "}
-              <Link href="https://www.indeed.com/hire/c/info/pre-employment-testing?hl=en">
+              <Link
+                href="https://www.indeed.com/hire/c/info/pre-employment-testing?hl=en"
+                target="_blank"
+              >
                 work-related tests
               </Link>{" "}
               or assessments. This keeps the interview organized and sets clear
@@ -88,7 +97,10 @@ const Following = () => {
               general questions about their professional interests and why
               they’re interested in the position. This gives you an opportunity
               to understand where their expectations lie in terms of{" "}
-              <Link href="https://www.indeed.com/hire/c/info/creating-a-career-development-plan-for-your-employees?hl=en&co=US">
+              <Link
+                href="https://www.indeed.com/hire/c/info/creating-a-career-development-plan-for-your-employees?hl=en&co=US"
+                target="_blank"
+              >
                 professional development
               </Link>{" "}
               and helps you assess their understanding of the company and the
