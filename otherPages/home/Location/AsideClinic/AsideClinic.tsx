@@ -1,5 +1,5 @@
 import { Address, InfoCard, TitleCard } from "../styled";
-import { Wrapper, Iframe, Block, Button } from "./styled";
+import { Wrapper, Iframe, Block, Button, BoxWrapper } from "./styled";
 import { FC, Dispatch, SetStateAction } from "react";
 import IMGLogo from "../../../../public/Illinois-BC-Name01e.png";
 import { Box } from "@mui/material";
@@ -28,19 +28,20 @@ export const AsideClinic: FC<TAsideClinic> = ({ setOpenIndex, clinical }) => {
             height={47}
             alt="Illinois"
             title="Illinois"
+            id="image"
           />
         </Box>
         <Box>
           <Button onClick={() => setOpenIndex(-1)}>X</Button>
         </Box>
       </Block>
-      <Box>
+      <BoxWrapper>
         <TitleCard>{clinical.title}</TitleCard>
         <Address>{clinical.address}</Address>
         <InfoCard>{clinical.telephone}</InfoCard>
         <InfoCard>{clinical.email}</InfoCard>
         <InfoCard>{clinical.webSite}</InfoCard>
-      </Box>
+      </BoxWrapper>
       {clinical && clinical.location === "Opening soon!" ? (
         ""
       ) : (

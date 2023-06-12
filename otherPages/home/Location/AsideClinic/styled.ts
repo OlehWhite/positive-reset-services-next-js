@@ -1,16 +1,16 @@
-import { Box, styled, Button as MUIButton} from '@mui/material';
+import { Box, styled, Button as MUIButton } from "@mui/material";
 
-export const Wrapper = styled('aside')(() => {
+export const Wrapper = styled("aside")(() => {
   return {
-    padding: '0 40px'
+    padding: "0 40px",
   };
 });
 
 export const Block = styled(Box)(() => {
   return {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center'
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
   };
 });
 
@@ -20,44 +20,57 @@ export const Button = styled(MUIButton)(() => {
   };
 });
 
-export const Img = styled('img')(() => {
+export const Img = styled("img")(() => {
   return {
-    width: '100%',
+    width: "100%",
     maxWidth: 300,
-    padding: '20px 40px 0 40px',
+    padding: "20px 40px 0 40px",
 
-    '@media (max-width: 470px)': {
-      maxWidth: 200
+    "@media (max-width: 470px)": {
+      maxWidth: 200,
     },
 
-    '@media (max-width: 370px)': {
-      maxWidth: 150
-    }
+    "@media (max-width: 370px)": {
+      maxWidth: 150,
+    },
+
+    "@media (max-width: 400px)": {
+      width: 100,
+    },
   };
 });
 
-export const Iframe = styled('iframe')(() => {
+export const BoxWrapper = styled(Box)({
+  maxWidth: 700,
+  width: "100%",
+
+  "@media (max-width: 400px)": {
+    width: 200,
+  },
+});
+
+export const Iframe = styled("iframe")(() => {
   return {
     width: 700,
     height: 450,
     border: 0,
 
-    '@media (max-width: 796px)': {
+    "@media (max-width: 796px)": {
       width: 500,
-      height: 500
+      height: 500,
     },
 
-    '@media (max-width: 620px)': {
+    "@media (max-width: 620px)": {
       width: 400,
-      height: 500
+      height: 500,
     },
 
-    '@media (max-width: 470px)': {
-      width: 350
+    "@media (max-width: 470px)": {
+      width: 350,
     },
 
-    '@media (max-width: 400px)': {
-      width: 270
-    }
+    "@media (max-width: 400px)": {
+      width: 200,
+    },
   };
 });
