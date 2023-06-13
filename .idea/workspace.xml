@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Following/Following.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Following/Following.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/LayoutHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/LayoutHeader.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,7 @@
       <workItem from="1686479422459" duration="14000" />
       <workItem from="1686479440144" duration="11413000" />
       <workItem from="1686563435305" duration="2149000" />
-      <workItem from="1686567593527" duration="18270000" />
+      <workItem from="1686567593527" duration="18739000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1686480218770</created>
@@ -248,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686598352102</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update">
+      <created>1686605510205</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1686605510205</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
