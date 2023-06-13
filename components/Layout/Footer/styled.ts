@@ -98,6 +98,7 @@ export const ImgPost = styled("img")(() => {
     height: 60,
     borderRadius: "50%",
     marginRight: 24,
+    objectFit: "cover",
   };
 });
 

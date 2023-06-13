@@ -61,7 +61,7 @@ export const Title = styled("h2")(() => {
 
 export const Text = styled("p")(() => {
   return {
-    fontSize: 14,
+    fontSize: 15,
     color: "#959595",
     lineHeight: "26px",
   };
