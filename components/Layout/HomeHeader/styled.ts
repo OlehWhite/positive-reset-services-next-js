@@ -95,7 +95,7 @@ export const WrapperInfo = styled(Box)(() => {
     marginLeft: 200,
 
     "@media (max-width: 1023px)": {
-      margin: 20,
+      margin: 5,
     },
   };
 });
