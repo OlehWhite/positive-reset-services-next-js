@@ -64,6 +64,10 @@ body {
   text-decoration: none;
 }
 
+#arrow-off {
+  cursor: pointer;
+}
+
 @media (max-width: 769px) {
   #link {
     display: none;
