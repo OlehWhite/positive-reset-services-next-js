@@ -28,6 +28,19 @@ const CommunityIntegration = () => {
         <title>
           Positive Reset Services - Call Today | Community Integration
         </title>
+        <meta
+          name="keywords"
+          content="Community Integration Programs,
+Supportive Community Services,
+Building Connections in the Community,
+Community Integration for Mental Health,
+Social Integration Services,
+Community Reintegration Support,
+Promoting Inclusion and Engagement,
+Community Outreach Programs,
+Enhancing Social Skills,
+Community Integration Resources"
+        />
         <meta name="description" content="COMMUNITY INTEGRATION" />
         <meta name="description2" content="OUR RESEARCH ON HUMAN INTEGRATION" />
         <meta

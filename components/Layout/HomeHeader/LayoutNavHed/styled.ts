@@ -1,5 +1,4 @@
 import { styled, Box } from "@mui/material";
-import Link from "next/link";
 
 export const Container = styled(Box)(() => {
   return {
@@ -18,26 +17,6 @@ export const Wrapper = styled("nav")(() => {
   };
 });
 
-export const Nav = styled("a")(() => {
-  return {
-    color: "white",
-    transition: ".3s",
-    marginRight: 20,
-    textDecoration: "none",
-    fontSize: 14,
-    fontWeight: 700,
-    cursor: "pointer",
-
-    "&:hover": {
-      color: "#3498db",
-    },
-
-    "@media (max-width: 769px)": {
-      display: "none",
-    },
-  };
-});
-
 export const WrapperMenu = styled(Box)(() => {
   return {
     display: "none",
@@ -50,6 +29,10 @@ export const WrapperMenu = styled(Box)(() => {
 
 export const WrapperSidebar = styled(Box)(() => {
   return {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+
     "@media (max-width: 769px)": {
       display: "flex",
       alignItems: "center",

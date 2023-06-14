@@ -34,6 +34,11 @@ export const Email = styled(Box)(() => {
     color: "white",
     fontWeight: 400,
     fontSize: 13,
+    transition: ".3s",
+
+    "&:hover": {
+      color: "#d5d5d5",
+    },
   };
 });
 
@@ -103,4 +108,8 @@ export const WrapperImg = styled(Box)(() => {
   return {
     marginRight: 6,
   };
+});
+
+export const LinkAddress = styled("a")({
+  textDecoration: "none",
 });

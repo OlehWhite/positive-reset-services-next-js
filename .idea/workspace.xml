@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/pages/404.tsx" afterDir="false" />
+    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="fix last mistakes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/LayoutHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/LayoutHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/LayoutHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/LayoutHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MUIAccordion/MUIAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MUIAccordion/MUIAccordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Services/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Services/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/erm/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/emr/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Services/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/path.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/path.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/404.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about-us.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about-us.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/appointment-request.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/appointment-request.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/billing-and-insurances.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/billing-and-insurances.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/career-opportunities.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/career-opportunities.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/child-and-adolescent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/child-and-adolescent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/community-integration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/community-integration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact-us.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact-us.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/erm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/emr.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/find-location.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/find-location.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/how-to-start.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/how-to-start.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/interview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/interview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/medication-management.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/medication-management.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/office-layout-setup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/office-layout-setup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/state-license.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/state-license.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/telehealth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/telehealth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/website.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/website.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/videoplayback.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/public/videoplayback.mp4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/oleh.white/Desktop/positive-reset-clinic-next-js/pages",
+    "last_opened_file_path": "C:/Users/oleh.white/Desktop/positive-reset-clinic-next-js",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\oleh.white\\AppData\\Roaming\\npm\\node_modules\\prettier",
@@ -68,7 +98,8 @@
       <workItem from="1686663445185" duration="373000" />
       <workItem from="1686666734323" duration="977000" />
       <workItem from="1686670621407" duration="1273000" />
-      <workItem from="1686674264427" duration="7000" />
+      <workItem from="1686674264427" duration="20000" />
+      <workItem from="1686674414959" duration="6969000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1686480218770</created>
@@ -294,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686671308029</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="update">
+      <created>1686674274371</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1686674274371</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +351,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="fix last mistakes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix last mistakes" />
   </component>
 </project>

@@ -41,7 +41,14 @@ export const Services: FC = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <video controls autoPlay muted loop src="/videoplayback.mp4" />
+          <video
+            width={640}
+            controls
+            autoPlay
+            muted
+            loop
+            src="/videoplayback.mp4"
+          />
         </Box>
       </Modal>
     </Wrapper>

@@ -3,7 +3,7 @@ export const DATA_LINKS = [
   { name: "State License", path: "/state-license" },
   { name: "Training", path: "/training" },
   { name: "Interview", path: "/interview" },
-  { name: "ERM", path: "/erm" },
+  { name: "EMR", path: "/emr" },
   { name: "Find Location", path: "/find-location" },
   { name: "Community Integration", path: "/community-integration" },
   { name: "Office Layout/Setup", path: "/office-layout-setup" },

@@ -24,6 +24,10 @@ const MedicationManagement = () => {
         <title>
           Positive Reset Services - Call Today | Medication Management
         </title>
+        <meta
+          name="keywords"
+          content="Medication management, Medication administration, Medication monitoring, Medication adherence, Medication safety, Medication optimization, Prescription management, Medication reminders, Medication tracking, Medication support"
+        />
         <meta name="description" content="MEDICATION MANAGEMENT" />
       </Head>
       <OtherHeader />

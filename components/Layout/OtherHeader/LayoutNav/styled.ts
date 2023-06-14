@@ -39,6 +39,10 @@ export const Nav = styled("a")(() => {
 
 export const WrapperSidebar = styled(Box)(() => {
   return {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+
     "@media (max-width: 769px)": {
       display: "flex",
       alignItems: "center",

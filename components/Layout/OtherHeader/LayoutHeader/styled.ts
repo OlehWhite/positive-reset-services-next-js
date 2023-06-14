@@ -31,9 +31,14 @@ export const Tel = styled(Box)(() => {
 
 export const Email = styled(Box)(() => {
   return {
-    color: "#979797",
+    color: "#555",
     fontWeight: 400,
     fontSize: 13,
+    transition: ".3s",
+
+    "&:hover": {
+      color: "#00C2FF",
+    },
   };
 });
 
@@ -55,13 +60,6 @@ export const Follow = styled(Box)(() => {
   return {
     display: "flex",
     color: "white",
-  };
-});
-
-export const ImgFollow = styled("img")(() => {
-  return {
-    width: 40,
-    height: 40,
   };
 });
 
@@ -111,4 +109,8 @@ export const WrapperImg = styled(Box)(() => {
   return {
     marginRight: 6,
   };
+});
+
+export const LinkAddress = styled("a")({
+  textDecoration: "none",
 });

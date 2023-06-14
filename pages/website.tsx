@@ -28,6 +28,10 @@ const Website = () => {
     <>
       <Head>
         <title>Positive Reset Services - Call Today | Website</title>
+        <meta
+          name="keywords"
+          content="Web development, web design, website, Professional website, Website creation, Business website, Expanding online presence, Turnkey website, Mobile-responsive website"
+        />
         <meta name="description" content="WEBSITE" />
         <meta
           name="description2"

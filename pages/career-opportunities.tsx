@@ -35,6 +35,10 @@ const CareerOpportunities = () => {
         <title>
           Positive Reset Services - Call Today | Career Opportunities
         </title>
+        <meta
+          name="keywords"
+          content="Career opportunities, Job openings, Employment opportunities, Careers, Hiring, Job vacancies, Work with us, Join our team, Job positions, Job application."
+        />
         <meta name="description" content="CAREER OPPORTUNITIES" />
         <meta
           name="description2"

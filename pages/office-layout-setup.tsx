@@ -25,6 +25,19 @@ const OfficeLayoutSetup = () => {
         <title>
           Positive Reset Services - Call Today | Office Layout Setup
         </title>
+        <meta
+          name="keywords"
+          content="Office Layout Design,
+Efficient Office Setup,
+Productive Workspace Configuration,
+Ergonomic Office Furniture,
+Office Organization Tips,
+Optimal Office Space Planning,
+Collaborative Office Environment,
+Office Layout Ideas,
+Creating a Functional Office Setup,
+Maximizing Office Efficiency"
+        />
         <meta name="description" content="OFFICE LAYOUT/SETUP" />
         <meta name="description2" content="BEFORE YOU START" />
         <meta

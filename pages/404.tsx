@@ -8,9 +8,10 @@ const Error = () => {
         style={{
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           color: "rgba(57,138,243,0.98)",
           fontSize: 50,
-          height: "12vh",
+          height: "15vh",
         }}
       >
         Not Found 404

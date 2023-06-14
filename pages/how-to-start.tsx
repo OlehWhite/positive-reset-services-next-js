@@ -24,6 +24,21 @@ const HowToStart = () => {
     <>
       <Head>
         <title>Positive Reset Services - Call Today | How to Start</title>
+        <meta
+          name="keywords"
+          content="Getting started,
+Steps to begin,
+Starting guide,
+Begin your journey,
+How to get started,
+Starting process,
+First steps,
+Launching your journey,
+Initiating the process,
+Beginning your path,
+Starting point,
+Getting underway"
+        />
         <meta name="description" content="HOW TO START" />
         <meta name="description2" content="HOW TO START A FRANCHISING" />
         <meta

@@ -23,6 +23,19 @@ const FindLocation = () => {
     <>
       <Head>
         <title>Positive Reset Services - Call Today | Find Location</title>
+        <meta
+          name="keywords"
+          content="Find Treatment Locations,
+Local Treatment Centers,
+Treatment Facility Locator,
+Nearby Mental Health Services,
+Counseling Centers Near Me,
+Addiction Recovery Centers,
+Substance Abuse Treatment Centers,
+Mental Health Clinics,
+Therapy Services in [Location],
+Behavioral Health Facilities"
+        />
         <meta name="description" content="LOCATION" />
         <meta name="description2" content="HOW TO PICK A FRANCHISE LOCATION?" />
         <meta name="description3" content="GET EXPERIENCED SUPPORT" />

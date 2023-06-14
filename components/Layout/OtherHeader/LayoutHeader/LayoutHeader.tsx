@@ -11,6 +11,7 @@ import {
   Wrapper,
   WrapperFollow,
   WrapperImg,
+  LinkAddress,
 } from "./styled";
 import React, { FC, useEffect, useState } from "react";
 import axios from "axios";
@@ -21,6 +22,7 @@ import IMGLinkedin from "../../../../public/linkedin-icon.svg";
 import Image from "next/image";
 import { PRIVATE_DATA } from "../../../../otherPages/privateData";
 import LogoImgDark from "../../../LogoImgDark/LogoImgDark";
+import ROUTES from "../../../../otherPages/path";
 
 const ID = "telephoneNumber";
 
@@ -71,7 +73,9 @@ export const LayoutHeader: FC = () => {
           </WrapperImg>
           <ContactInfo>
             <Tel>{telNum}</Tel>
-            <Email>{email}</Email>
+            <LinkAddress href={ROUTES.CONTACT_US}>
+              <Email>{email}</Email>
+            </LinkAddress>
           </ContactInfo>
         </Contact>
         <Follow>

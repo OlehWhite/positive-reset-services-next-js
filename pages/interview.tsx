@@ -30,6 +30,24 @@ const Interview = () => {
     <>
       <Head>
         <title>Positive Reset Services - Call Today | Interview</title>
+        <meta
+          name="keywords"
+          content="Job interview,
+Employment interview,
+Interview tips,
+Interview preparation,
+Interview questions,
+Interview techniques,
+Interview skills,
+Mock interview,
+Behavioral interview,
+Panel interview,
+Interview dress code,
+Interview follow-up,
+Phone interview,
+Video interview,
+Interview success"
+        />
         <meta name="description" content="INTERVIEW" />
         <meta name="description2" content="HOW TO CONDUCT A JOB INTERVIEW?" />
         <meta name="description3" content="WHAT IS A JOB INTERVIEW?" />

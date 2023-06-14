@@ -23,6 +23,10 @@ const BillingAndInsurances = () => {
         <title>
           Positive Reset Services - Call Today | Billing and Insurances
         </title>
+        <meta
+          name="keywords"
+          content="Billing and insurances, Insurance coverage, Payment options, Medical billing, Insurance claims, Billing services, Healthcare billing, Insurance reimbursement, Insurance providers, Payment assistance"
+        />
         <meta name="description" content="BILLING AND INSURANCES" />
         <meta name="description2" content="FINANCIAL RESOURCES" />
       </Head>

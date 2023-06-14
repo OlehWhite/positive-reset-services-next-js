@@ -58,7 +58,13 @@ const AppointmentRequest = () => {
   return (
     <>
       <Head>
-        <title>Positive Reset Services - Call Today | Appointment Request</title>
+        <title>
+          Positive Reset Services - Call Today | Appointment Request
+        </title>
+        <meta
+          name="keywords"
+          content="Appointment request, Book appointment, Schedule appointment, Online appointment, Request appointment, Book online, Healthcare appointment, Medical appointment, Appointment booking, Patient appointment"
+        />
         <meta name="description" content="APPOINTMENT REQUEST" />
       </Head>
       <OtherHeader />

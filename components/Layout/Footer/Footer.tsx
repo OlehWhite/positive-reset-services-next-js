@@ -49,7 +49,6 @@ const BASE_MENU = [
   { page: "Services", path: "/services" },
   { page: "Тelehealth", path: "/telehealth" },
   { page: "Appointment request", path: "/appointment-request" },
-  { page: "Billing and Insurances", path: "/billing-and-insurances" },
   { page: "About Us", path: "/about-us" },
   { page: "Contact us", path: "/contact-us" },
   { page: "Career Opportunities", path: "/career-opportunities" },
@@ -149,9 +148,12 @@ export const Footer: FC = () => {
           <LogoImg />
           <TextLogo>
             POSITIVE RESET SERVICES is a successful franchise company that opens
-            Mental Health Clinics across Unlined Sates. POSITIVE RESET SERVICES
-            works like a professional system that has stood the test of time,
-            financial success and successful treatment outcomes.
+            Mental Health Clinics across United States.
+          </TextLogo>
+          <TextLogo>
+            POSITIVE RESET SERVICES operates as a professional system that has
+            stood the test of time, achieving financial success and delivering
+            successful treatment outcomes.
           </TextLogo>
           <Contact>
             <WrapperImg>

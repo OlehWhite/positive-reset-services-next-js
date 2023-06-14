@@ -24,6 +24,21 @@ const StateLicense = () => {
     <>
       <Head>
         <title>Positive Reset Services - Call Today | State License</title>
+        <meta
+          name="keywords"
+          content="State licensing,
+Licensing requirements,
+Obtaining a state license,
+State-specific licenses,
+License application process,
+State licensing guidelines,
+Licensing regulations,
+Licensing procedures,
+State license eligibility,
+License renewal,
+Compliance with state regulations,
+State license verification"
+        />
         <meta name="description" content="STATE LICENSE" />
         <meta name="description2" content="GETTING STATE LICENSE" />
         <meta name="description3" content="UNIVERSAL SYSTEM" />

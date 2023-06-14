@@ -6,7 +6,7 @@ import {
   Block,
   Text,
   WrapperBlock,
-} from "../otherPages/erm/styled";
+} from "../otherPages/emr/styled";
 import IMGOne from "../public/erm-Slidе02.jpg";
 import IMGTwo from "../public/erm.jpg";
 import IMGThree from "../public/erm-04-4.jpg";
@@ -18,12 +18,25 @@ import React from "react";
 import Image from "next/image";
 import Head from "next/head";
 
-const Erm = () => {
+const Emr = () => {
   return (
     <>
       <Head>
-        <title>Positive Reset Services - Call Today | ERM</title>
-        <meta name="description" content="ERM COMPLETE" />
+        <title>Positive Reset Services - Call Today | EMR</title>
+        <meta
+          name="keywords"
+          content="Electronic Medical Records,
+EMR Solutions,
+Digital Healthcare,
+Medical Record Management System,
+Transition to Electronic Medical Records,
+Optimizing Medical Documentation,
+Efficient Medical Data Management,
+Medical Data Storage,
+Electronic Access to Patient Records,
+Streamlining Medical Record Processes"
+        />
+        <meta name="description" content="EMR COMPLETE" />
         <meta
           name="description2"
           content="WHAT IS MENTAL HEALTH EMR COMPLETE?"
@@ -38,7 +51,7 @@ const Erm = () => {
             backgroundImage: `url(${IMGHeader.src})`,
           }}
         >
-          <Title>ERM COMPLETE</Title>
+          <Title>EMR COMPLETE</Title>
         </WrapperHeader>
         <Wrapper>
           <Block>
@@ -128,4 +141,4 @@ const Erm = () => {
   );
 };
 
-export default Erm;
+export default Emr;

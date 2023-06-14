@@ -22,6 +22,10 @@ const ChildAndAdolescent = () => {
         <title>
           Positive Reset Services - Call Today | Child and Adolescent
         </title>
+        <meta
+          name="keywords"
+          content="Child and adolescent services, Child therapy, Adolescent therapy, Child counseling, Adolescent counseling, Child mental health, Adolescent mental health, Child behavioral health, Adolescent behavioral health, Child development, Adolescent development"
+        />
         <meta name="description" content="CHILD AND ADOLESCENT" />
       </Head>
       <OtherHeader />

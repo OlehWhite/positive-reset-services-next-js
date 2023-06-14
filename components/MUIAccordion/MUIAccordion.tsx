@@ -44,7 +44,7 @@ export const MUIAccordion = () => {
               <Link href="/interview" id="dark-link">
                 Interviews
               </Link>
-              <Link href="/erm" id="dark-link">
+              <Link href="/emr" id="dark-link">
                 ERM
               </Link>
               <Link href="/find-location" id="dark-link">

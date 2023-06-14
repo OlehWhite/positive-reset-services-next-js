@@ -11,6 +11,7 @@ import {
   Wrapper,
   WrapperFollow,
   WrapperImg,
+  LinkAddress,
 } from "./styled";
 import React, { FC, useEffect, useState } from "react";
 import { Box } from "@mui/material";
@@ -22,6 +23,7 @@ import IMGFacebook from "../../../../public/facebook-icon.svg";
 import IMGLinkedin from "../../../../public/linkedin-icon.svg";
 import { PRIVATE_DATA } from "../../../../otherPages/privateData";
 import LogoImg from "../../../LogoImg/LogoImg";
+import ROUTES from "../../../../otherPages/path";
 
 const ID = "telephoneNumber";
 
@@ -74,7 +76,9 @@ export const LayoutHeader: FC = () => {
           </WrapperImg>
           <ContactInfo>
             <Tel>{telNum}</Tel>
-            <Email>{email}</Email>
+            <LinkAddress href={ROUTES.CONTACT_US}>
+              <Email>{email}</Email>
+            </LinkAddress>
           </ContactInfo>
         </Contact>
         <Follow>

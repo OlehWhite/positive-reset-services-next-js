@@ -24,10 +24,20 @@ const Telehealth = () => {
     <Box>
       <Head>
         <title>Positive Reset Services - Call Today | Telehealth</title>
+        <meta
+          name="keywords"
+          content="Telehealth services, Online therapy, Virtual counseling, Remote mental health support, Telemedicine solutions, Telepsychiatry, Teletherapy sessions, Telehealth benefits, Accessible healthcare, Remote treatment options"
+        />
         <meta name="description" content="STATE LICENSE" />
-        <meta name="description2" content="TELEHEALTH: AN EXCITING NEW SEGMENT FOR FRANCHISING OPPORTUNITY" />
+        <meta
+          name="description2"
+          content="TELEHEALTH: AN EXCITING NEW SEGMENT FOR FRANCHISING OPPORTUNITY"
+        />
         <meta name="description3" content="THE FUTURE IS NOW – EMBRACE IT" />
-        <meta name="description4" content="A NEW NORMAL MEANS NEW OPPORTUNITIES" />
+        <meta
+          name="description4"
+          content="A NEW NORMAL MEANS NEW OPPORTUNITIES"
+        />
         <meta name="description5" content="THE DEMAND FOR INNOVATIVE CARE" />
       </Head>
       <OtherHeader />
