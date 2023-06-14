@@ -1,5 +1,5 @@
 export const PRIVATE_DATA = {
-  spaseID: "6zmu4epjkfkz",
-  accessId: "0X5b2h_lSbIDd9Qqf2Nea0k4EY7-6wQaUOFEmzrtz0c",
-  keyID: "xjvdddoo",
+  spaseID: process.env.NEXT_PUBLIC_SPACE_ID,
+  accessId: process.env.NEXT_PUBLIC_ACCESS_ID,
+  keyID: process.env.NEXT_PUBLIC_KEY_ID,
 };
