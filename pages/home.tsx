@@ -16,28 +16,13 @@ const Home: FC = () => {
       <Head>
         <title>Positive Reset Services - Call Today</title>
         <meta
-          name="keywords"
-          content="Positive Reset Services - Call Today, Addiction treatment services, Recovery programs, Substance abuse counseling, Mental health support, Holistic approach to recovery, Professional treatment center, Personalized care and therapy, Long-term recovery solutions, Supportive community for healing"
-        />
-        <meta
           name="description"
-          content="THE GRASS IS GREENER WHERE YOU WATER IT"
+          content="POSITIVE RESET SERVICES is a successful franchise company that operates Mental Health Clinics across the United States. We provide a professional system with a proven track record of financial success and positive treatment outcomes. Call us today at +1 (848) 228-3388."
         />
         <meta
-          name="description2"
-          content="THE SECRET OF GETTING AHEAD IS GETTING STARTED"
+          name="keywords"
+          content="Positive Reset Services, Mental Health Clinics, successful franchise, professional system, financial success, treatment outcomes"
         />
-        <meta name="description3" content="DO IT WITH PASSION, OR NOT AT ALL" />
-        <meta name="description4" content="POSITIVE RESET SERVICES LOCATIONS" />
-        <meta
-          name="description5"
-          content="THE ‘MENTAL HEALTH’ FRANCHISE IS BEYOND SUCCESSFUL."
-        />
-        <meta
-          name="description6"
-          content="NEWS ABOUT FRANCHISING OPPORTUNITIES"
-        />
-        <meta name="description7" content="OUR PARTNERS" />
       </Head>
       <HomeHeader />
       <Box>
