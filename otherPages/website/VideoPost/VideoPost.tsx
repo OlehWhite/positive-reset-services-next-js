@@ -44,7 +44,6 @@ export const VideoPost = () => {
               width={630}
               controls
               autoPlay
-              muted
               loop
               src="/Website Service.mp4"
             />

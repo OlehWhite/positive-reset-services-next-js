@@ -39,14 +39,7 @@ export const Video = () => {
         aria-describedby="modal-modal-description"
       >
         <WrapperBox sx={style}>
-          <video
-            width={650}
-            controls
-            autoPlay
-            muted
-            loop
-            src="/PRS Interview.mp4"
-          />
+          <video width={650} controls autoPlay loop src="/PRS Interview.mp4" />
         </WrapperBox>
       </Modal>
     </>
