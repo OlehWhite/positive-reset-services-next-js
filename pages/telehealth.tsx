@@ -50,6 +50,7 @@ const Telehealth = () => {
         <Post>
           <Box>
             <Image
+              id="image"
               src={IMGOne}
               width={625}
               height={355}
@@ -88,6 +89,7 @@ const Telehealth = () => {
 
           <Box>
             <Image
+              id="image"
               src={IMGTwo}
               width={625}
               height={355}
@@ -116,6 +118,7 @@ const Telehealth = () => {
         <Post>
           <Box>
             <Image
+              id="image"
               src={IMGThree}
               width={625}
               height={355}
