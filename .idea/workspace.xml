@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="fix last mistakes">
+    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="corrections have been made">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/home/Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Services/Services.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/interview/Video/Video.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/interview/Video/Video.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/HomeHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/HomeHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Location/AsideClinic/AsideClinic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Location/AsideClinic/AsideClinic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Location/AsideClinic/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Location/AsideClinic/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Location/Location.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Location/Location.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Location/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Location/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Sidebar/Covid19/Covid19.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Sidebar/Covid19/Covid19.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,7 @@
       <workItem from="1686674414959" duration="8533000" />
       <workItem from="1686742924842" duration="2997000" />
       <workItem from="1686747381432" duration="9000" />
-      <workItem from="1686752258652" duration="274000" />
+      <workItem from="1686752258652" duration="4109000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1686480218770</created>
@@ -342,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686745240238</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="fix last mistakes">
+      <created>1686752552490</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1686752552490</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,6 +372,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="fix last mistakes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix last mistakes" />
+    <MESSAGE value="corrections have been made" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrections have been made" />
   </component>
 </project>

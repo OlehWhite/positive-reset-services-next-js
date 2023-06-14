@@ -70,7 +70,7 @@ export const Iframe = styled("iframe")(() => {
     },
 
     "@media (max-width: 400px)": {
-      width: 200,
+      width: 300,
     },
   };
 });

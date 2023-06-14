@@ -1,5 +1,4 @@
 import React, { FC, useEffect, useState } from "react";
-import IGMIllinois from "../../../../public/Illinois-BC-Name01e.png";
 import { Wrapper, Title, Text, Link, Tel, Email, Address } from "./styled";
 import { Box } from "@mui/material";
 import axios from "axios";
@@ -7,6 +6,7 @@ import IMGFacebook from "../../../../public/icons8-facebook-50.png";
 import IMGInstagram from "../../../../public/instagram.png";
 import Image from "next/image";
 import { PRIVATE_DATA } from "../../../privateData";
+import LogoImgDark from "../../../../components/LogoImgDark/LogoImgDark";
 
 const ID = "telephoneNumber";
 
@@ -50,13 +50,7 @@ export const Covid19: FC = () => {
     <>
       <Wrapper>
         <Box sx={{ marginTop: "10px" }}>
-          <Image
-            src={IGMIllinois}
-            alt="Logo"
-            title="Logo"
-            width={300}
-            height={47}
-          />
+          <LogoImgDark />
         </Box>
         <Box>
           <Title>STATEMENT TO EMPLOYEES AND PATIENTS REGARDING COVID-19</Title>

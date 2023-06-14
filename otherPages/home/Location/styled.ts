@@ -85,6 +85,23 @@ export const InfoCard = styled("p")(() => {
   };
 });
 
+export const InfoCardLink = styled("a")(() => {
+  return {
+    display: "flex",
+    fontSize: 14,
+    color: "#959595",
+    fontWeight: 400,
+    transition: ".3s",
+    margin: "10px 0",
+    cursor: "pointer",
+    textDecoration: "none",
+
+    "&:hover": {
+      color: "#3498db",
+    },
+  };
+});
+
 export const Wrapper = styled(Box)(() => {
   return {
     maxWidth: 350,

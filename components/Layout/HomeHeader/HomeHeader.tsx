@@ -35,7 +35,6 @@ export const HomeHeader = () => {
   const [headerInfo, setHeaderInfo] = useState<any[]>([]);
   const [headerInfoData, setHeaderInfoData] = useState<string[]>([]);
 
-  console.log(PRIVATE_DATA.spaseID);
   useEffect(() => {
     axios
       .get(

@@ -1,9 +1,8 @@
-import { Address, InfoCard, TitleCard } from "../styled";
+import { Address, InfoCard, InfoCardLink, TitleCard } from "../styled";
 import { Wrapper, Iframe, Block, Button, BoxWrapper } from "./styled";
-import { FC, Dispatch, SetStateAction } from "react";
-import IMGLogo from "../../../../public/Illinois-BC-Name01e.png";
+import React, { FC, Dispatch, SetStateAction } from "react";
 import { Box } from "@mui/material";
-import Image from "next/image";
+import LogoImgDark from "../../../../components/LogoImgDark/LogoImgDark";
 
 type TAsideClinic = {
   clinical: {
@@ -13,6 +12,8 @@ type TAsideClinic = {
     email: string;
     webSite: string;
     location: string;
+    emailLink: string;
+    webSiteLink: string;
   };
   setOpenIndex: Dispatch<SetStateAction<number>>;
 };
@@ -22,14 +23,7 @@ export const AsideClinic: FC<TAsideClinic> = ({ setOpenIndex, clinical }) => {
     <Wrapper>
       <Block>
         <Box sx={{ marginTop: "20px" }}>
-          <Image
-            src={IMGLogo}
-            width={300}
-            height={47}
-            alt="Illinois"
-            title="Illinois"
-            id="image"
-          />
+          <LogoImgDark />
         </Box>
         <Box>
           <Button onClick={() => setOpenIndex(-1)}>X</Button>
@@ -39,8 +33,20 @@ export const AsideClinic: FC<TAsideClinic> = ({ setOpenIndex, clinical }) => {
         <TitleCard>{clinical.title}</TitleCard>
         <Address>{clinical.address}</Address>
         <InfoCard>{clinical.telephone}</InfoCard>
-        <InfoCard>{clinical.email}</InfoCard>
-        <InfoCard>{clinical.webSite}</InfoCard>
+        {clinical.emailLink && clinical.emailLink.length > 0 ? (
+          <InfoCardLink href={clinical.emailLink} target="_blank">
+            {clinical.email}
+          </InfoCardLink>
+        ) : (
+          <InfoCard>{clinical.email}</InfoCard>
+        )}
+        {clinical.webSiteLink && clinical.webSiteLink.length > 0 ? (
+          <InfoCardLink href={clinical.webSiteLink} target="_blank">
+            {clinical.webSite}
+          </InfoCardLink>
+        ) : (
+          <InfoCard>{clinical.webSite}</InfoCard>
+        )}
       </BoxWrapper>
       {clinical && clinical.location === "Opening soon!" ? (
         ""

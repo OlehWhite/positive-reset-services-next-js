@@ -48,6 +48,8 @@ interface Post {
   telephone: string;
   webSite: string;
   location: string;
+  emailLink: string;
+  webSiteLink: string;
 }
 
 const ID = "locationClinic";
@@ -69,9 +71,11 @@ export const Location: FC = () => {
             const imgID = post.fields.img.sys.id;
             const title = post.fields.title.content[0].content[0].value;
             const address = post.fields.Address.content[0].content[0].value;
+            const emailLink = post.fields.emailLink;
             const email = post.fields.email.content[0].content[0].value;
-            const telephone = post.fields.telephone.content[0].content[0].value;
+            const webSiteLink = post.fields.webSiteLink;
             const webSite = post.fields.webSite.content[0].content[0].value;
+            const telephone = post.fields.telephone.content[0].content[0].value;
             const location = post.fields.googleMap.content[0].content[0].value;
 
             return axios
@@ -83,7 +87,9 @@ export const Location: FC = () => {
                   img: response.data.fields.file.url,
                   title: title,
                   address: address,
+                  emailLink: emailLink,
                   email: email,
+                  webSiteLink: webSiteLink,
                   telephone: telephone,
                   webSite: webSite,
                   location: location,
