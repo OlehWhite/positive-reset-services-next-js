@@ -19,10 +19,6 @@ const Home: FC = () => {
           name="description"
           content="POSITIVE RESET SERVICES is a successful franchise company that operates Mental Health Clinics across the United States. We provide a professional system with a proven track record of financial success and positive treatment outcomes. Call us today at +1 (848) 228-3388."
         />
-        <meta
-          name="keywords"
-          content="Positive Reset Services, Mental Health Clinics, successful franchise, professional system, financial success, treatment outcomes"
-        />
       </Head>
       <HomeHeader />
       <Box>
