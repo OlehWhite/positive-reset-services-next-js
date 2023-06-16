@@ -17,11 +17,10 @@ import { VideoPost } from "../otherPages/website/VideoPost/VideoPost";
 import { InfoPost } from "../otherPages/website/InfoPost/InfoPost";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import IMGHeader from "../public/Website.jpg";
-
-import Image from "next/image";
 import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
-import React from "react";
+import Image from "next/image";
 import Head from "next/head";
+import React from "react";
 
 const Website = () => {
   return (
