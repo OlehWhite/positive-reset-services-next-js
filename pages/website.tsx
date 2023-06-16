@@ -118,7 +118,7 @@ const Website = () => {
             <Box sx={{ display: "flex" }}>
               <InfoPost />
             </Box>
-            <Box>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
               <VideoPost />
             </Box>
           </Wrapper>

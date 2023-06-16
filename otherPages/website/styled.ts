@@ -79,7 +79,6 @@ export const Block = styled(Box)(() => {
 export const Wrapper = styled(Box)(() => {
   return {
     display: "flex",
-    justifyContent: "space-between",
     width: "100%",
     maxWidth: 1300,
     margin: "0 auto",

@@ -5,6 +5,7 @@ export const Container = styled(Box)(() => {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    margin: "35px 0",
   };
 });
 
