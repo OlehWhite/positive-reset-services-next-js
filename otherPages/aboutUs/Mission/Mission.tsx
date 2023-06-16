@@ -10,9 +10,9 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 900,
+  width: 640,
   boxShadow: 24,
-  height: 600,
+  height: 360,
 };
 
 export const Mission = () => {
@@ -44,14 +44,7 @@ export const Mission = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <iframe
-            title="YouTube Video"
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/1qbf1kMx8Dw?rel=1&autoplay=1"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
+          <video width={640} controls autoPlay loop src="/videoplayback.mp4" />
         </Box>
       </Modal>
     </Container>
