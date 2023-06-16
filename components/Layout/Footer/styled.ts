@@ -55,7 +55,7 @@ export const TextLogo = styled(Text)(() => {
   return {
     marginTop: 24,
     marginBottom: 24,
-    // textAlign: "right",
+    textAlign: "right",
     lineHeight: "26px",
   };
 });

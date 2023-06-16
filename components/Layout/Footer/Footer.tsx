@@ -148,10 +148,11 @@ export const Footer: FC = () => {
           <LogoImg />
           <TextLogo>
             POSITIVE RESET SERVICES is a successful franchise company that opens
-            Mental Health Clinics across United States. POSITIVE RESET SERVICES
-            operates as a professional system that has stood the test of time,
-            achieving financial success and delivering successful treatment
-            outcomes.
+            Mental Health Clinics across United States.
+            <br />
+            POSITIVE RESET SERVICES operates as a professional system that has
+            stood the test of time, achieving financial success and delivering
+            successful treatment outcomes.
           </TextLogo>
           <Contact>
             <WrapperImg>
