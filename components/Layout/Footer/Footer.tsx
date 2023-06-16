@@ -11,7 +11,6 @@ import {
   WrapperPost,
   Post,
   Title,
-  Date,
   ImgPost,
   Contact,
   ContactInfo,
@@ -197,9 +196,8 @@ export const Footer: FC = () => {
                     alt="First Post"
                     title="Second Post"
                   />
-                  <Box>
+                  <Box sx={{ display: "flex", alignItems: "center" }}>
                     <Text>{post.text}</Text>
-                    <Date>{post.button}</Date>
                   </Box>
                 </Post>
               ))}
