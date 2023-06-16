@@ -44,7 +44,7 @@ export const Text = styled("p")(() => {
 
 export const WrapperImg = styled(Box)(() => {
   return {
-    padding: "0 28px 28px 0",
+    padding: "0 20px 20px 0",
   };
 });
 

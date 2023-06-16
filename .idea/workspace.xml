@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="fix info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/website/InfoPost/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/website/InfoPost/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/website.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/website.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,7 @@
       <workItem from="1686747381432" duration="9000" />
       <workItem from="1686752258652" duration="4260000" />
       <workItem from="1686774148287" duration="297000" />
-      <workItem from="1686835974757" duration="5486000" />
+      <workItem from="1686835974757" duration="5798000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1686480218770</created>
@@ -405,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686922151121</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="fix info">
+      <created>1686922334160</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1686922334160</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

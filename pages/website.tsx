@@ -114,7 +114,7 @@ const Website = () => {
           </Post>
         </Container>
         <Block>
-          <Wrapper>
+          <Wrapper sx={{ justifyContent: "space-evenly" }}>
             <Box sx={{ display: "flex" }}>
               <InfoPost />
             </Box>
