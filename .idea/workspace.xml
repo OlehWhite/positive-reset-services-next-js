@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="fix page website">
+    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="fix page about us">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/aboutUs/Mission/Mission.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/aboutUs/Mission/Mission.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/website/VideoPost/VideoPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/website/VideoPost/VideoPost.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <workItem from="1686747381432" duration="9000" />
       <workItem from="1686752258652" duration="4260000" />
       <workItem from="1686774148287" duration="297000" />
-      <workItem from="1686835974757" duration="2959000" />
+      <workItem from="1686835974757" duration="3827000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1686480218770</created>
@@ -377,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686918484249</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="fix page about us">
+      <created>1686919020215</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1686919020215</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,6 +406,7 @@
     <MESSAGE value="fix last mistakes" />
     <MESSAGE value="corrections have been made" />
     <MESSAGE value="fix page website" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix page website" />
+    <MESSAGE value="fix page about us" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix page about us" />
   </component>
 </project>

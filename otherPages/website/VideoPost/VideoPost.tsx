@@ -1,4 +1,4 @@
-import IMGVideoLogo from "../../../public/video-logo.jpg";
+import IMGVideoLogo from "../../../public/website-logo-wideo.jpg";
 import { VideoLogo, Wrapper } from "./styled";
 import { Box, Modal } from "@mui/material";
 import { useState } from "react";
