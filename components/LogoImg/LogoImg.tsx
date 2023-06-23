@@ -22,7 +22,7 @@ const LogoImg = () => {
               fontSize: 14,
             }}
           >
-            Metal Health Clinic
+            Mental Health Clinic
           </Box>
           <Box sx={{ color: "#fff", fontWeight: "600", fontSize: 14 }}>
             FRANCHISING OPPORTUNITY
