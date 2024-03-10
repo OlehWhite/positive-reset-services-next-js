@@ -72,7 +72,7 @@ export const PersonCard = styled("div")`
 
 export const Img = styled("img")`
   width: 224px;
-  height: 400px;
+  height: 250px;
   object-fit: cover;
   object-position: center;
 `;
