@@ -77,8 +77,10 @@ export const ContactInfo = styled(Box)(() => {
   return {};
 });
 
-export const Tel = styled(Box)(() => {
+export const Tel = styled('a')(() => {
   return {
+    display: 'block',
+    textDecoration: 'none',
     marginBottom: 2,
     color: "white",
     fontSize: 14,

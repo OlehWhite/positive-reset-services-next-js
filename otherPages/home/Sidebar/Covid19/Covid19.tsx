@@ -7,45 +7,9 @@ import IMGInstagram from "../../../../public/instagram.png";
 import Image from "next/image";
 import { PRIVATE_DATA } from "../../../privateData";
 import LogoImgDark from "../../../../components/LogoImgDark/LogoImgDark";
-
-const ID = "telephoneNumber";
+import { LINKS } from "../../../utils";
 
 export const Covid19: FC = () => {
-  const [telNum, setTelNum] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [linkFacebook, setLinkFaceBook] = useState<string>("");
-  const [linkInstagram, setLinkInstagram] = useState<string>("");
-  const [address, setAddress] = useState<string>("");
-
-  useEffect(() => {
-    axios
-      .get(
-        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`
-      )
-      .then((response) => {
-        setTelNum(
-          response.data.items[0].fields.telephoneNumber.content[0].content[0]
-            .value
-        );
-        setEmail(
-          response.data.items[0].fields.email.content[0].content[0].value
-        );
-        setLinkFaceBook(
-          response.data.items[0].fields.facebookLink.content[0].content[0].value
-        );
-        setLinkInstagram(
-          response.data.items[0].fields.instagramLink.content[0].content[0]
-            .value
-        );
-        setAddress(
-          response.data.items[0].fields.address.content[0].content[0].value
-        );
-      })
-      .catch((error) => {
-        console.error("Error fetching posts:", error);
-      });
-  }, []);
-
   return (
     <>
       <Wrapper>
@@ -85,11 +49,8 @@ export const Covid19: FC = () => {
             services please reach out to our office at +1 (848) 228-3388 and get
             access to the help you need.
           </Text>
-          <Tel>{telNum}</Tel>
-          <Email>{email}</Email>
-          <Address>{address}</Address>
           <Box sx={{ display: "flex" }}>
-            <Link href={linkFacebook} target="_blank">
+            <Link href={LINKS.facebook} target="_blank">
               <Image
                 src={IMGFacebook}
                 alt="Facebook"
@@ -98,7 +59,7 @@ export const Covid19: FC = () => {
                 height={22}
               />
             </Link>
-            <Link href={linkInstagram} target="_blank">
+            <Link href={LINKS.instagram} target="_blank">
               <Image
                 src={IMGInstagram}
                 alt="Linkedin"

@@ -24,6 +24,7 @@ import IMGLinkedin from "../../../../public/linkedin-icon.svg";
 import { PRIVATE_DATA } from "../../../../otherPages/privateData";
 import LogoImg from "../../../LogoImg/LogoImg";
 import ROUTES from "../../../../otherPages/path";
+import {OTHER_INFO} from "../../../../otherPages/utils";
 
 const ID = "telephoneNumber";
 
@@ -75,9 +76,9 @@ export const LayoutHeader: FC = () => {
             />
           </WrapperImg>
           <ContactInfo>
-            <Tel>{telNum}</Tel>
+            <Tel href={`tel:${OTHER_INFO.tel}`}>{OTHER_INFO.tel}</Tel>
             <LinkAddress href={ROUTES.CONTACT_US}>
-              <Email>{email}</Email>
+              <Email>{OTHER_INFO.email}</Email>
             </LinkAddress>
           </ContactInfo>
         </Contact>

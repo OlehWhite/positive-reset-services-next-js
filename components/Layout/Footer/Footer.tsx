@@ -42,6 +42,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PRIVATE_DATA } from "../../../otherPages/privateData";
 import LogoImg from "../../LogoImg/LogoImg";
+import {LINKS, OTHER_INFO, SCHEDULE} from "../../../otherPages/utils";
 
 const BASE_MENU = [
   { page: "Home", path: "/" },
@@ -61,16 +62,9 @@ interface Post {
 
 const ID = "telephoneNumber";
 const IDPosts = "aboutFranchising";
-const IDWorkingHours = "workingHours";
 
 export const Footer: FC = () => {
-  const [telNum, setTelNum] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [linkFacebook, setLinkFaceBook] = useState<string>("");
-  const [linkLinkedin, setLinkLinkedin] = useState<string>("");
-  const [linkTwitter, setTwitter] = useState<string>("");
   const [posts, setPosts] = useState<Post[]>([]);
-  const [workingHours, setWorkingHours] = useState<any>();
 
   useEffect(() => {
     axios
@@ -104,42 +98,6 @@ export const Footer: FC = () => {
       });
   }, []);
 
-  useEffect(() => {
-    axios
-      .get(
-        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`
-      )
-      .then((response: any) => {
-        setTelNum(
-          response.data.items[0].fields.telephoneNumber.content[0].content[0]
-            .value
-        );
-        setEmail(
-          response.data.items[0].fields.email.content[0].content[0].value
-        );
-        setLinkFaceBook(
-          response.data.items[0].fields.facebookLink.content[0].content[0].value
-        );
-        setLinkLinkedin(
-          response.data.items[0].fields.linkedinLink.content[0].content[0].value
-        );
-        setTwitter(
-          response.data.items[0].fields.twitterLink.content[0].content[0].value
-        );
-      })
-      .catch((error: any) => {
-        console.error("Error fetching posts:", error);
-      });
-  }, []);
-
-  useEffect(() => {
-    axios
-      .get(
-        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${IDWorkingHours}&access_token=${PRIVATE_DATA.accessId}`
-      )
-      .then((response: any) => setWorkingHours(response.data.items));
-  }, []);
-
   return (
     <Container>
       <Wrapper>
@@ -164,8 +122,8 @@ export const Footer: FC = () => {
               />
             </WrapperImg>
             <ContactInfo>
-              <Tel>{telNum}</Tel>
-              <Email>{email}</Email>
+              <Tel href={`tel:${OTHER_INFO.tel}`}>{OTHER_INFO.tel}</Tel>
+              <Email>{OTHER_INFO.email}</Email>
             </ContactInfo>
           </Contact>
         </Logo>
@@ -216,15 +174,11 @@ export const Footer: FC = () => {
             </WrapperAlarm>
           </WrapperPosition>
           <Days>
-            {workingHours &&
-              workingHours
-                .map((day: any, index: string) => (
-                  <Day key={index}>
-                    {day.fields.day}:{" "}
-                    {day.fields.hours.content[0].content[0].value}
-                  </Day>
-                ))
-                .reverse()}
+            {Object.entries(SCHEDULE).map((day, index) => (
+              <Day key={index}>
+                {day[0]}: {day[1]}
+              </Day>
+            ))}
           </Days>
         </WorkingHours>
       </Wrapper>
@@ -233,7 +187,7 @@ export const Footer: FC = () => {
           Copyright © 2021 Vimax LLC. All rights reserved
         </TitleFooter>
         <Links>
-          <Facebook href={linkFacebook} target="_blank">
+          <Facebook href={LINKS.facebook} target="_blank">
             <Image
               src={IMGFacebook}
               width={20}
@@ -242,7 +196,7 @@ export const Footer: FC = () => {
               title="Facebook"
             />
           </Facebook>
-          <Twitter href={linkTwitter} target="_blank">
+          <Twitter href={LINKS.twitter} target="_blank">
             <Image
               src={IMGTwitter}
               width={20}
@@ -251,7 +205,7 @@ export const Footer: FC = () => {
               title="Twitter"
             />
           </Twitter>
-          <Linkedin href={linkLinkedin} target="_blank">
+          <Linkedin href={LINKS.linkedin} target="_blank">
             <Image
               src={IMGLinkedin}
               width={20}

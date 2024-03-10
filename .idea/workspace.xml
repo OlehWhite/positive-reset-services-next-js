@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="fix website">
+      <change afterPath="$PROJECT_DIR$/otherPages/ourStaff/PersonCardComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otherPages/ourStaff/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otherPages/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/our-staff.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/LayoutHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/LayoutHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/LayoutHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/LayoutHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Sidebar/Covid19/Covid19.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Sidebar/Covid19/Covid19.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +37,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2R3WoOeJyDBlJdTS8cc8PGNtaoK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -34,17 +54,24 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/oleh.white/Desktop/portfolio-website",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/oleh/Desktop/positive-resert-projects/positive-reset-services-next-js/otherPages",
     "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\oleh.white\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "D:\\My Project\\Viktor\\positive-reset-services\\node_modules\\typescript\\lib",
+    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/oleh/Desktop/positive-resert-projects/positive-reset-services-next-js/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/otherPages" />
+      <recent name="$PROJECT_DIR$/pages" />
       <recent name="C:\Users\oleh.white\Desktop\positive-reset-clinic-next-js\pages" />
       <recent name="C:\Users\oleh.white\Desktop\positive-reset-clinic-next-js\components" />
     </key>
@@ -78,6 +105,8 @@
       <workItem from="1687026251204" duration="13000" />
       <workItem from="1687376994056" duration="245000" />
       <workItem from="1687380156872" duration="12000" />
+      <workItem from="1710065419744" duration="77000" />
+      <workItem from="1710065601133" duration="1639000" />
     </task>
     <task id="LOCAL-00003" summary="update">
       <created>1686481996131</created>
