@@ -45,7 +45,7 @@ const OurStaff = () => {
   return (
     <>
       <Head>
-        <title>Positive Reset Elizabeth - Call Today | Our Staff</title>
+        <title>Positive Reset Services - Call Today | Our Staff</title>
       </Head>
       <OtherHeader />
       <WrapperHeader

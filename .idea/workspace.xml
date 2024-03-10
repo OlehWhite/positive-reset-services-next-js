@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="fix website">
-      <change afterPath="$PROJECT_DIR$/otherPages/ourStaff/PersonCardComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/otherPages/ourStaff/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/otherPages/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/our-staff.tsx" afterDir="false" />
+    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="added new page out stuff and fix another issues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/LayoutHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/LayoutHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/LayoutHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/LayoutHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/home/Sidebar/Covid19/Covid19.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Sidebar/Covid19/Covid19.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/our-staff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/our-staff.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +93,7 @@
       <workItem from="1687376994056" duration="245000" />
       <workItem from="1687380156872" duration="12000" />
       <workItem from="1710065419744" duration="77000" />
-      <workItem from="1710065601133" duration="1639000" />
+      <workItem from="1710065601133" duration="2742000" />
     </task>
     <task id="LOCAL-00003" summary="update">
       <created>1686481996131</created>
@@ -451,7 +438,7 @@
       <option name="project" value="LOCAL" />
       <updated>1687377172674</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,6 +467,7 @@
     <MESSAGE value="fix page website logo video img" />
     <MESSAGE value="fix info" />
     <MESSAGE value="fix website" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix website" />
+    <MESSAGE value="added new page out stuff and fix another issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new page out stuff and fix another issues" />
   </component>
 </project>
