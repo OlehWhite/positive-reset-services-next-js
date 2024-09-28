@@ -80,7 +80,7 @@ export const Location: FC = () => {
           alt="Left Button"
           title="Left Button"
           onClick={onPrev}
-          id="arrow-off"
+          id="arrow-off "
         />
         <Clinicals {...settings} ref={ref}>
           {LOCATIONS.map((location, index) => (
