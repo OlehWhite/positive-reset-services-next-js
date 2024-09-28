@@ -5,20 +5,11 @@ import { Box } from "@mui/material";
 import LogoImgDark from "../../../../components/LogoImgDark/LogoImgDark";
 
 type TAsideClinic = {
-  clinical: {
-    title: string;
-    address: string;
-    telephone: string;
-    email: string;
-    webSite: string;
-    location: string;
-    emailLink: string;
-    webSiteLink: string;
-  };
+  location: any;
   setOpenIndex: Dispatch<SetStateAction<number>>;
 };
 
-export const AsideClinic: FC<TAsideClinic> = ({ setOpenIndex, clinical }) => {
+export const AsideClinic: FC<TAsideClinic> = ({ setOpenIndex, location }) => {
   return (
     <Wrapper>
       <Block>
@@ -30,28 +21,28 @@ export const AsideClinic: FC<TAsideClinic> = ({ setOpenIndex, clinical }) => {
         </Box>
       </Block>
       <BoxWrapper>
-        <TitleCard>{clinical.title}</TitleCard>
-        <Address>{clinical.address}</Address>
-        <InfoCard>{clinical.telephone}</InfoCard>
-        {clinical.emailLink && clinical.emailLink.length > 0 ? (
-          <InfoCardLink href={clinical.emailLink} target="_blank">
-            {clinical.email}
+        <TitleCard>{location.title}</TitleCard>
+        <Address>{location.address}</Address>
+        <InfoCard>{location.tel}</InfoCard>
+        {location.email ? (
+          <InfoCardLink href={location.emailLink} target="_blank">
+            {location.email}
           </InfoCardLink>
         ) : (
-          <InfoCard>{clinical.email}</InfoCard>
+          <InfoCard>{location.email}</InfoCard>
         )}
-        {clinical.webSiteLink && clinical.webSiteLink.length > 0 ? (
-          <InfoCardLink href={clinical.webSiteLink} target="_blank">
-            {clinical.webSite}
+        {location.webSiteLink ? (
+          <InfoCardLink href={location.webSiteLink} target="_blank">
+            {location.webSite}
           </InfoCardLink>
         ) : (
-          <InfoCard>{clinical.webSite}</InfoCard>
+          <InfoCard>{location.webSite}</InfoCard>
         )}
       </BoxWrapper>
-      {clinical && clinical.location === "Opening soon!" ? (
+      {location && location.location === "Opening soon!" ? (
         ""
       ) : (
-        <Iframe src={clinical.location}></Iframe>
+        <Iframe src={location.location}></Iframe>
       )}
     </Wrapper>
   );

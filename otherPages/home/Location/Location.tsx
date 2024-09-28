@@ -16,11 +16,10 @@ import IMGRight from "../../../public/arrow-point-to-right.png";
 import React, { FC, useEffect, useRef, useState } from "react";
 import { Box } from "@mui/material";
 import Slider from "react-slick";
-import axios from "axios";
 import Drawer from "@mui/material/Drawer";
 import { AsideClinic } from "./AsideClinic/AsideClinic";
 import Image from "next/image";
-import { PRIVATE_DATA } from "../../privateData";
+import { LOCATIONS } from "../../utils";
 
 const settings = {
   dots: false,
@@ -40,80 +39,9 @@ const settings = {
   ],
 };
 
-interface Post {
-  img: string;
-  title: string;
-  address: string;
-  email: string;
-  telephone: string;
-  webSite: string;
-  location: string;
-  emailLink: string;
-  webSiteLink: string;
-}
-
-const ID = "locationClinic";
-
 export const Location: FC = () => {
   const ref = useRef<Slider | null>(null);
-  const [post, setPost] = useState<Post[]>([]);
   const [openIndex, setOpenIndex] = useState(-1);
-
-  useEffect(() => {
-    setPost([]);
-    axios
-      .get(
-        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`
-      )
-      .then((response) => {
-        if (response.data.items.length > 0) {
-          response.data.items.forEach((post?: any) => {
-            const imgID = post.fields.img.sys.id;
-            const title = post.fields.title.content[0].content[0].value;
-            const address = post.fields.Address.content[0].content[0].value;
-            const emailLink = post.fields.emailLink;
-            const email = post.fields.email.content[0].content[0].value;
-            const webSiteLink = post.fields.webSiteLink;
-            const webSite = post.fields.webSite.content[0].content[0].value;
-            const telephone = post.fields.telephone.content[0].content[0].value;
-            const location = post.fields.googleMap.content[0].content[0].value;
-
-            return axios
-              .get(
-                `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/assets/${imgID}?access_token=${PRIVATE_DATA.accessId}`
-              )
-              .then((response) => {
-                const newPost: Post = {
-                  img: response.data.fields.file.url,
-                  title: title,
-                  address: address,
-                  emailLink: emailLink,
-                  email: email,
-                  webSiteLink: webSiteLink,
-                  telephone: telephone,
-                  webSite: webSite,
-                  location: location,
-                };
-
-                setPost((prevPost) => {
-                  const isPostExists = prevPost.some(
-                    (post) => post.title === newPost.title
-                  );
-
-                  if (isPostExists) {
-                    return prevPost;
-                  }
-
-                  return [...prevPost, newPost];
-                });
-              });
-          });
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching posts:", error);
-      });
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -154,40 +82,39 @@ export const Location: FC = () => {
           onClick={onPrev}
           id="arrow-off"
         />
-        {post && post.length > 0 && (
-          <Clinicals {...settings} ref={ref}>
-            {post.map((clinical, index) => (
-              <Wrapper key={clinical.title}>
-                <Box onClick={() => setOpenIndex(index)}>
-                  <Box>
-                    <Img
-                      src={clinical.img}
-                      alt={clinical.img}
-                      title={clinical.img}
-                    />
-                  </Box>
-                  <Box>
-                    <TitleCard>{clinical.title}</TitleCard>
-                    <Address>{clinical.address}</Address>
-                    <InfoCard>{clinical.telephone}</InfoCard>
-                    <InfoCard>{clinical.email}</InfoCard>
-                    <InfoCard>{clinical.webSite}</InfoCard>
-                  </Box>
-                </Box>
-                <Drawer
-                  anchor="right"
-                  open={openIndex === index}
-                  onClose={() => setOpenIndex(-1)}
-                >
-                  <AsideClinic
-                    setOpenIndex={setOpenIndex}
-                    clinical={clinical}
+        <Clinicals {...settings} ref={ref}>
+          {LOCATIONS.map((location, index) => (
+            <Wrapper key={index}>
+              <Box onClick={() => setOpenIndex(index)}>
+                <Box>
+                  <Img
+                    src={
+                      location.isOpened
+                        ? "/location-open.png"
+                        : "/location-opening-soon.png"
+                    }
+                    alt={location.address}
+                    title={location.address}
                   />
-                </Drawer>
-              </Wrapper>
-            ))}
-          </Clinicals>
-        )}
+                </Box>
+                <Box>
+                  <TitleCard>{location.title}</TitleCard>
+                  <Address>{location.address}</Address>
+                  <InfoCard>{location.tel}</InfoCard>
+                  <InfoCard>{location.email}</InfoCard>
+                  <InfoCard>{location.link}</InfoCard>
+                </Box>
+              </Box>
+              <Drawer
+                anchor="right"
+                open={openIndex === index}
+                onClose={() => setOpenIndex(-1)}
+              >
+                <AsideClinic setOpenIndex={setOpenIndex} location={location} />
+              </Drawer>
+            </Wrapper>
+          ))}
+        </Clinicals>
         <Image
           src={IMGRight}
           width={64}
