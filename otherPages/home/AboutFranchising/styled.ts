@@ -61,8 +61,8 @@ export const Img = styled("img")(() => {
 
 export const Wrapper = styled(Box)(() => {
   return {
-    maxWidth: 350,
-    width: "100%",
+    // minWidth: 350,
+    width: 350,
     transition: ".3s",
     cursor: "pointer",
   };

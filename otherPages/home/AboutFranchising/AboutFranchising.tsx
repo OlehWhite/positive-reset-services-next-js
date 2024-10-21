@@ -66,7 +66,7 @@ export const AboutFranchising: FC = () => {
     ref.current?.slickPrev();
   };
 
-  if (project?.blogs.length === 0) return;
+  if (!project?.blogs) return;
 
   return (
     <Container>
