@@ -275,7 +275,6 @@ export const Links = styled(Box)(() => {
 
 export const Facebook = styled("a")(() => {
   return {
-    width: 14,
     marginRight: 16,
     transition: ".3s",
 
@@ -288,7 +287,6 @@ export const Facebook = styled("a")(() => {
 
 export const Twitter = styled("a")(() => {
   return {
-    width: 14,
     marginRight: 16,
 
     "&:hover": {
@@ -300,7 +298,6 @@ export const Twitter = styled("a")(() => {
 
 export const Linkedin = styled("a")(() => {
   return {
-    width: 14,
     transition: ".3s",
 
     "&:hover": {
