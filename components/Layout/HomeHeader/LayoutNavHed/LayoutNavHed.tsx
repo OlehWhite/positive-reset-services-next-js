@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import { Box } from "@mui/material";
 import { useRouter } from "next/router";
 import { Container, Wrapper, WrapperMenu, WrapperSidebar } from "./styled";

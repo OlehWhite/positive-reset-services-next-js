@@ -21,9 +21,13 @@ import IMGLinkedin from "../../../../public/linkedin-icon.svg";
 import Image from "next/image";
 import LogoImgDark from "../../../LogoImgDark/LogoImgDark";
 import ROUTES from "../../../../otherPages/path";
-import { LINKS, OTHER_INFO } from "../../../../otherPages/utils";
+import { useGetProjects } from "../../../../services/getInfo";
+import { Stack } from "@mui/material";
+import GoogleTranslate from "../../../GoogleTranslate";
 
 export const LayoutHeader: FC = () => {
+  const { project } = useGetProjects();
+
   return (
     <Wrapper>
       <LogoImgDark />
@@ -38,10 +42,12 @@ export const LayoutHeader: FC = () => {
               title="Phone"
             />
           </WrapperImg>
+
           <ContactInfo>
-            <Tel href={`tel:${OTHER_INFO.tel}`}>{OTHER_INFO.tel}</Tel>
+            <Tel href={`tel:${project?.tel}`}>{project?.tel}</Tel>
+
             <LinkAddress href={ROUTES.CONTACT_US}>
-              <Email>{OTHER_INFO.email}</Email>
+              <Email>{project?.email}</Email>
             </LinkAddress>
           </ContactInfo>
         </Contact>
@@ -55,10 +61,12 @@ export const LayoutHeader: FC = () => {
               title="Follow"
             />
           </WrapperImg>
+
           <FollowInfo>
             <Title>Follow Us</Title>
+
             <WrapperFollow>
-              <Link href={LINKS.facebook} target="_blank">
+              <Link href={project?.links[0].link} target="_blank">
                 <Image
                   src={IMGFacebook}
                   width={12}
@@ -67,7 +75,8 @@ export const LayoutHeader: FC = () => {
                   title="Facebook"
                 />
               </Link>
-              <Link href={LINKS.linkedin} target="_blank">
+
+              <Link href={project?.links[1].link} target="_blank">
                 <Image
                   src={IMGLinkedin}
                   width={12}

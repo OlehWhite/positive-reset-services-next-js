@@ -1,16 +1,15 @@
+import * as React from "react";
+import Link from "next/link";
 import { MUIButton, Container } from "./styled";
 import { DATA_LINKS } from "./constants";
 import { Ul, Li } from "./styled";
 import Menu from "@mui/material/Menu";
-import * as React from "react";
-import { FC } from "react";
-import Link from "next/link";
 
-interface TServices {
+interface Props {
   color?: string;
 }
 
-export const Services: FC<TServices> = ({ color }) => {
+export const Services = ({ color }: Props) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {

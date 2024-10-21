@@ -29,9 +29,8 @@ import {
   Facebook,
   TitleFooter,
 } from "./styled";
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 import { Box } from "@mui/material";
-import axios from "axios";
 import ModalServices from "../../ModalServices/ModalServices";
 import IMGFacebook from "../../../public/facebook-footer.svg";
 import IMGLinkedin from "../../../public/linkedin-footer.svg";
@@ -40,9 +39,8 @@ import IMGPhoneLogo from "../../../public/silver-mobil.png";
 import IMGTwitter from "../../../public/twitter-footer.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { PRIVATE_DATA } from "../../../otherPages/privateData";
 import LogoImg from "../../LogoImg/LogoImg";
-import {LINKS, OTHER_INFO, SCHEDULE} from "../../../otherPages/utils";
+import { useGetProjects } from "../../../services/getInfo";
 
 const BASE_MENU = [
   { page: "Home", path: "/" },
@@ -54,49 +52,8 @@ const BASE_MENU = [
   { page: "Career Opportunities", path: "/career-opportunities" },
 ];
 
-interface Post {
-  img: string;
-  text: string;
-  button: string;
-}
-
-const ID = "telephoneNumber";
-const IDPosts = "aboutFranchising";
-
 export const Footer: FC = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
-
-  useEffect(() => {
-    axios
-      .get(
-        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${IDPosts}&access_token=${PRIVATE_DATA.accessId}`
-      )
-      .then((response: any) => {
-        if (response.data.items.length > 0) {
-          response.data.items.map((post?: any) => {
-            const imgID = post.fields.img.sys.id;
-            const text = post.fields.text.content[0].content[0].value;
-            const button = post.fields.button.content[0].content[0].value;
-
-            return axios
-              .get(
-                `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/assets/${imgID}?access_token=${PRIVATE_DATA.accessId}`
-              )
-              .then((response: any) => {
-                const newPost: Post = {
-                  img: response.data.fields.file.url,
-                  text,
-                  button,
-                };
-                setPosts((prevPost) => [...prevPost, newPost]);
-              });
-          });
-        }
-      })
-      .catch((error: any) => {
-        console.error("Error fetching posts:", error);
-      });
-  }, []);
+  const { project } = useGetProjects();
 
   return (
     <Container>
@@ -111,6 +68,7 @@ export const Footer: FC = () => {
             stood the test of time, achieving financial success and delivering
             successful treatment outcomes.
           </TextLogo>
+
           <Contact>
             <WrapperImg>
               <Image
@@ -121,14 +79,18 @@ export const Footer: FC = () => {
                 title="Phone"
               />
             </WrapperImg>
+
             <ContactInfo>
-              <Tel href={`tel:${OTHER_INFO.tel}`}>{OTHER_INFO.tel}</Tel>
-              <Email>{OTHER_INFO.email}</Email>
+              <Tel href={`tel:${project?.tel}`}>{project?.tel}</Tel>
+
+              <Email>{project?.email}</Email>
             </ContactInfo>
           </Contact>
         </Logo>
+
         <Menu>
           <Title>MENU</Title>
+
           <Ul>
             {BASE_MENU.map((link, index) => (
               <Li key={index}>
@@ -143,24 +105,32 @@ export const Footer: FC = () => {
             ))}
           </Ul>
         </Menu>
-        <RecentPosts>
-          <Title>RECENT POST</Title>
-          <WrapperPost>
-            {posts.length > 0 &&
-              posts.slice(0, 3).map((post: Post, index: number) => (
-                <Post key={index}>
-                  <ImgPost
-                    src={post.img}
-                    alt="First Post"
-                    title="Second Post"
-                  />
-                  <Box sx={{ display: "flex", alignItems: "center" }}>
-                    <Text>{post.text}</Text>
-                  </Box>
-                </Post>
-              ))}
-          </WrapperPost>
-        </RecentPosts>
+
+        {project?.blogs.length > 0 && (
+          <RecentPosts>
+            <Title>RECENT BLOG</Title>
+
+            <WrapperPost>
+              {project?.blogs
+                ?.map((blog, index) => (
+                  <Post key={index}>
+                    <ImgPost
+                      src={blog.image}
+                      alt="First Post"
+                      title="Second Post"
+                    />
+
+                    <Box sx={{ display: "flex", alignItems: "center" }}>
+                      <Text>{blog?.title}</Text>
+                    </Box>
+                  </Post>
+                ))
+                .reverse()
+                .slice(0, 3)}
+            </WrapperPost>
+          </RecentPosts>
+        )}
+
         <WorkingHours>
           <WrapperPosition>
             <WrapperAlarm>
@@ -173,21 +143,24 @@ export const Footer: FC = () => {
               />
             </WrapperAlarm>
           </WrapperPosition>
+
           <Days>
-            {Object.entries(SCHEDULE).map((day, index) => (
+            {project?.schedule.map((day, index) => (
               <Day key={index}>
-                {day[0]}: {day[1]}
+                {day.day}: {day.open} - {day.close}
               </Day>
             ))}
           </Days>
         </WorkingHours>
       </Wrapper>
+
       <Copyright>
         <TitleFooter>
           Copyright © 2021 Vimax LLC. All rights reserved
         </TitleFooter>
+
         <Links>
-          <Facebook href={LINKS.facebook} target="_blank">
+          <Facebook href={project?.links[0].link} target="_blank">
             <Image
               src={IMGFacebook}
               width={20}
@@ -196,7 +169,8 @@ export const Footer: FC = () => {
               title="Facebook"
             />
           </Facebook>
-          <Twitter href={LINKS.twitter} target="_blank">
+
+          <Twitter href={project?.links[2].link} target="_blank">
             <Image
               src={IMGTwitter}
               width={20}
@@ -205,7 +179,8 @@ export const Footer: FC = () => {
               title="Twitter"
             />
           </Twitter>
-          <Linkedin href={LINKS.linkedin} target="_blank">
+
+          <Linkedin href={project?.links[1].link} target="_blank">
             <Image
               src={IMGLinkedin}
               width={20}

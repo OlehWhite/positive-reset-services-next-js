@@ -5,8 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="added default location`s array for now">
+      <change afterPath="$PROJECT_DIR$/components/GoogleTranslate.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Layout/PhoneIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/blogs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/blogs/[blogId].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/call-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/firebase.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/getInfo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/reach__dialog.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Feedbacks/Feedbacks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Feedbacks/Feedbacks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FormFields/PreferredDataAndTimeField/PreferredDataAndTimeField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FormFields/PreferredDataAndTimeField/PreferredDataAndTimeField.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/HomeHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/HomeHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/LayoutHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/LayoutHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutHeader/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/LayoutNavHed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/LayoutNavHed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/LayoutNavHed/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/HomeHeader/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/HomeHeader/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/LayoutHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/LayoutHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutHeader/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/LayoutNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/LayoutNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/OtherHeader/LayoutNav/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/OurMission/CustomExpandIcon/CustomExpandIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/OurMission/CustomExpandIcon/CustomExpandIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Services/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/aboutUs/VisionStatement/VisionStatement.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/aboutUs/VisionStatement/VisionStatement.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/careerOpportunities/PersonalForm/PersonalForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/careerOpportunities/PersonalForm/PersonalForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/contactUs/ContactForm/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/contactUs/ContactForm/ContactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/contactUs/ContactInfo/ContactInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/contactUs/ContactInfo/ContactInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/AboutFranchising/AboutFranchising.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/AboutFranchising/AboutFranchising.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/AboutFranchising/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/AboutFranchising/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/FranchiseOptions/FranchiseOptions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/FranchiseOptions/FranchiseOptions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Location/AsideClinic/AsideClinic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Location/AsideClinic/AsideClinic.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otherPages/home/Location/Location.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Location/Location.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Location/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Location/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/OurPartners/OurPartners.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/OurPartners/OurPartners.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/home/Sidebar/Covid19/Covid19.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/Sidebar/Covid19/Covid19.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/ourStaff/PersonCardComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/ourStaff/PersonCardComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/privateData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/privateData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherPages/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about-us.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about-us.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/our-staff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/our-staff.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,26 +86,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/oleh/Desktop/positive-reset-services/positive-reset-services-next-js",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/oleh/Desktop/positive-reset-services/positive-reset-services-next-js/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/oleh/Desktop/positive-reset-services/positive-reset-services-next-js&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/oleh/Desktop/positive-reset-services/positive-reset-services-next-js/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/otherPages" />
@@ -64,6 +115,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/pages/blogs" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -98,7 +150,9 @@
       <workItem from="1710065419744" duration="77000" />
       <workItem from="1710065601133" duration="3536000" />
       <workItem from="1710082042724" duration="408000" />
-      <workItem from="1727554485533" duration="4056000" />
+      <workItem from="1727554485533" duration="7337000" />
+      <workItem from="1728377953989" duration="739000" />
+      <workItem from="1728672729027" duration="71117000" />
     </task>
     <task id="LOCAL-00003" summary="update">
       <created>1686481996131</created>

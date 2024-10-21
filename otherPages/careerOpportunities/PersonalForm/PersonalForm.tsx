@@ -78,9 +78,6 @@ export const PersonalForm = () => {
           <DateField register={register} errors={errors} />
           <ErrorValidation errors={errors.Date} />
         </InputWrapper>
-        {/*<Box sx={{margin: '30px 0 20px'}}>*/}
-        {/*  <input type="file" onChange={handleFileChange} />*/}
-        {/*</Box>*/}
         <ButtonSubmit type="submit" disabled={!isValid || isSubmitting}>
           Submit
         </ButtonSubmit>

@@ -39,7 +39,7 @@ export const ContactForm: FC = () => {
   });
   const [state, stateSubmit] = useFormspree(`${PRIVATE_DATA.keyID}`);
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: FormData) => {
     await stateSubmit(data);
     reset();
   };
@@ -48,19 +48,26 @@ export const ContactForm: FC = () => {
     <Wrapper>
       <Box>
         <Title>CONTACT FORM</Title>
+
         <StyledForm onSubmit={handleSubmit(onSubmit)}>
           <InputWrapper>
             <Label>Your Name</Label>
+
             <NameField register={register} errors={errors} />
+
             <ErrorValidation errors={errors.Name} />
           </InputWrapper>
+
           <InputWrapper>
             <Label>Your Email </Label>
             <EmailField register={register} errors={errors} />
+
             <ErrorValidation errors={errors.Email} />
           </InputWrapper>
+
           <InputWrapper>
             <Label>Your Message</Label>
+
             <TextField
               maxLength={400}
               style={errors.Text && { border: "1px solid red" }}
@@ -68,10 +75,12 @@ export const ContactForm: FC = () => {
             />
             <ErrorValidation errors={errors.Text} />
           </InputWrapper>
+
           <ButtonSubmit type="submit" disabled={!isValid || isSubmitting}>
             Send
           </ButtonSubmit>
         </StyledForm>
+
         {state.succeeded && (
           <Success>Your message was sent successfully!</Success>
         )}

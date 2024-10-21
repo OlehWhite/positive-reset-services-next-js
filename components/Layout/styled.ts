@@ -17,10 +17,15 @@ export const Img = styled(Box)(({ show }: { show: number }) => {
     borderRadius: "50%",
     visibility: show ? "visible" : "hidden",
     opacity: show ? 1 : 0,
-    transition: "visibility 0s linear 0.3s, opacity 0.3s linear",
+    transition: ".3s",
     cursor: "pointer",
     width: 30,
     padding: 10,
+
+    ":hover": {
+      transition: ".3s",
+      backgroundColor: "#51708f",
+    },
   };
 });
 

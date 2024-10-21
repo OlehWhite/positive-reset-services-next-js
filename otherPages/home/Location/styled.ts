@@ -56,7 +56,8 @@ export const Clinicals = styled(Slider)(() => {
 
 export const Img = styled("img")(() => {
   return {
-    width: 350,
+    width: "100%",
+    maxWidth: 350,
   };
 });
 
@@ -85,7 +86,7 @@ export const InfoCard = styled("p")(() => {
   };
 });
 
-export const InfoCardLink = styled("a")(() => {
+export const InfoCardLink = styled("p")(() => {
   return {
     display: "flex",
     fontSize: 14,
@@ -104,7 +105,7 @@ export const InfoCardLink = styled("a")(() => {
 
 export const Wrapper = styled(Box)(() => {
   return {
-    maxWidth: 350,
+    maxWidth: 250,
     width: "100%",
     transition: ".3s",
 

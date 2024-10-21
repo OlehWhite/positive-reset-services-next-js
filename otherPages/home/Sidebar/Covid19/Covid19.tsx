@@ -1,15 +1,15 @@
-import React, { FC, useEffect, useState } from "react";
-import { Wrapper, Title, Text, Link, Tel, Email, Address } from "./styled";
+import React, { FC } from "react";
+import { Wrapper, Title, Text, Link } from "./styled";
 import { Box } from "@mui/material";
-import axios from "axios";
 import IMGFacebook from "../../../../public/icons8-facebook-50.png";
 import IMGInstagram from "../../../../public/instagram.png";
 import Image from "next/image";
-import { PRIVATE_DATA } from "../../../privateData";
 import LogoImgDark from "../../../../components/LogoImgDark/LogoImgDark";
-import { LINKS } from "../../../utils";
+import { useGetProjects } from "../../../../services/getInfo";
 
 export const Covid19: FC = () => {
+  const { project } = useGetProjects();
+
   return (
     <>
       <Wrapper>
@@ -50,7 +50,7 @@ export const Covid19: FC = () => {
             access to the help you need.
           </Text>
           <Box sx={{ display: "flex" }}>
-            <Link href={LINKS.facebook} target="_blank">
+            <Link href={project?.links[0].link} target="_blank">
               <Image
                 src={IMGFacebook}
                 alt="Facebook"
@@ -59,7 +59,8 @@ export const Covid19: FC = () => {
                 height={22}
               />
             </Link>
-            <Link href={LINKS.instagram} target="_blank">
+
+            <Link href={project?.links[3].link} target="_blank">
               <Image
                 src={IMGInstagram}
                 alt="Linkedin"

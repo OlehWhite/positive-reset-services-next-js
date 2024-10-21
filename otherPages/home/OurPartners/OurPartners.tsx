@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useEffect, useRef } from "react";
 import {
   Container,
   Wrapper,
@@ -14,9 +14,8 @@ import IMGLeft from "../../../public/arrow-point-to-left.png";
 
 import { Box } from "@mui/material";
 import Slider from "react-slick";
-import axios from "axios";
 import Image from "next/image";
-import { PRIVATE_DATA } from "../../privateData";
+import { useGetProjects } from "../../../services/getInfo";
 
 const settings = {
   dots: false,
@@ -36,46 +35,10 @@ const settings = {
   ],
 };
 
-type TPartners = {
-  img: string;
-  link: string;
-};
-
-const ID = "ourPartners";
-
 export const OurPartners: FC = () => {
+  const { project } = useGetProjects();
+
   const ref = useRef<Slider | null>(null);
-
-  const [partners, setPartners] = useState<TPartners[]>([]);
-
-  useEffect(() => {
-    axios
-      .get(
-        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`
-      )
-      .then((response) => {
-        if (response.data.items.length > 0) {
-          response.data.items.forEach((post?: any) => {
-            const imgID = post.fields.img.sys.id;
-            const link = post.fields.link;
-            return axios
-              .get(
-                `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/assets/${imgID}?access_token=${PRIVATE_DATA.accessId}`
-              )
-              .then((response) => {
-                const newPost: TPartners = {
-                  img: response.data.fields.file.url,
-                  link,
-                };
-                setPartners((prevPost) => [...prevPost, newPost]);
-              });
-          });
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching posts:", error);
-      });
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -95,6 +58,8 @@ export const OurPartners: FC = () => {
     ref.current?.slickPrev();
   };
 
+  if (!project?.ourPartners) return;
+
   return (
     <Container>
       <Wrapper>
@@ -111,21 +76,21 @@ export const OurPartners: FC = () => {
             onClick={onPrev}
             id="arrow-off"
           />
-          {partners.length > 0 && (
-            <Clinicals ref={ref} {...settings}>
-              {partners.map((partner, index) => (
-                <Block key={index}>
-                  <Link href={partner.link} target="_blank">
-                    <Img
-                      src={partner.img}
-                      alt={partner.img}
-                      title={partner.img}
-                    />
-                  </Link>
-                </Block>
-              ))}
-            </Clinicals>
-          )}
+
+          <Clinicals ref={ref} {...settings}>
+            {project?.ourPartners.map((partner, index) => (
+              <Block key={index}>
+                <Link href={partner?.link} target="_blank">
+                  <Img
+                    src={partner?.image}
+                    alt={partner?.title}
+                    title={partner?.title}
+                  />
+                </Link>
+              </Block>
+            ))}
+          </Clinicals>
+
           <Image
             src={IMGRight}
             width={60}

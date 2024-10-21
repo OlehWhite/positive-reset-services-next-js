@@ -1,5 +1,4 @@
 import { Container, Wrapper, WrapperSidebar } from "./styled";
-import { FC, useState } from "react";
 import { Box } from "@mui/material";
 import { BASE_NAV } from "./constants";
 import { MUIAccordion } from "../../../MUIAccordion/MUIAccordion";
@@ -8,16 +7,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { Services } from "../../../Services/Services";
 import { Sidebar } from "../../../../otherPages/home/Sidebar/Sidebar";
+import React from "react";
 
-export const LayoutNav: FC = () => {
-  const [active, setActive] = useState("/");
-  const [location, setLocation] = useState("/");
+export const LayoutNav = () => {
   const router = useRouter();
-  const currentPath = router.pathname;
 
   const handleNavClick = (link: string) => {
-    setActive(link);
-    setLocation(router.pathname);
     router.push(link);
   };
 
@@ -28,6 +23,7 @@ export const LayoutNav: FC = () => {
           <WrapperMenu>
             <MUIAccordion />
           </WrapperMenu>
+
           {BASE_NAV.map((link, index) => (
             <Box sx={{ display: "inline-block" }} key={index}>
               {link.name === "SERVICES" ? (

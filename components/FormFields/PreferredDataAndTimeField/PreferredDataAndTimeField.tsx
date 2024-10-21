@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import React from "react";
 import { StyledInput } from "../styled";
 
-const PreferredDataAndTimeField: FC<any> = ({ register }: any) => {
+const PreferredDataAndTimeField = ({ register }: any) => {
   return (
     <StyledInput
       name="Preferred_Data_And_Time"

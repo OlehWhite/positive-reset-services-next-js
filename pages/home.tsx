@@ -7,10 +7,10 @@ import { OurPartners } from "../otherPages/home/OurPartners/OurPartners";
 import { Location } from "../otherPages/home/Location/Location";
 import { Services } from "../otherPages/home/Services/Services";
 import { Box } from "@mui/material";
-import React, { FC } from "react";
+import React from "react";
 import Head from "next/head";
 
-const Home: FC = () => {
+const Home = () => {
   return (
     <>
       <Head>
@@ -21,7 +21,7 @@ const Home: FC = () => {
         />
       </Head>
       <HomeHeader />
-      <Box>
+      <>
         <Services />
         <MotivationalQuotes />
         <Location />
@@ -29,7 +29,7 @@ const Home: FC = () => {
         <FranchiseOptions />
         <AboutFranchising />
         <OurPartners />
-      </Box>
+      </>
     </>
   );
 };

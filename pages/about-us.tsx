@@ -1,5 +1,5 @@
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
-import React, { FC } from "react";
+import React from "react";
 import { Box } from "@mui/material";
 import { Header } from "../otherPages/aboutUs/Header/Header";
 import { Mission } from "../otherPages/aboutUs/Mission/Mission";
@@ -7,7 +7,7 @@ import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
 import { VisionStatement } from "../otherPages/aboutUs/VisionStatement/VisionStatement";
 import Head from "next/head";
 
-const AboutUs: FC = () => {
+const AboutUs = () => {
   return (
     <Box>
       <Head>

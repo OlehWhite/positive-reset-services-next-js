@@ -1,3 +1,4 @@
+import React, { FC } from "react";
 import {
   Contact,
   ContactAndFollow,
@@ -13,57 +14,30 @@ import {
   WrapperImg,
   LinkAddress,
 } from "./styled";
-import React, { FC, useEffect, useState } from "react";
-import { Box } from "@mui/material";
-import axios from "axios";
+import { Box, Stack } from "@mui/material";
 import Image from "next/image";
+
 import IMGPhoneLogo from "../../../../public/white-mobil.png";
 import IMGFollowIcon from "../../../../public/white-follow-icon.png";
 import IMGFacebook from "../../../../public/facebook-icon.svg";
 import IMGLinkedin from "../../../../public/linkedin-icon.svg";
-import { PRIVATE_DATA } from "../../../../otherPages/privateData";
-import LogoImg from "../../../LogoImg/LogoImg";
-import ROUTES from "../../../../otherPages/path";
-import {OTHER_INFO} from "../../../../otherPages/utils";
 
-const ID = "telephoneNumber";
+import LogoImg from "../../../LogoImg/LogoImg";
+
+import ROUTES from "../../../../otherPages/path";
+
+import { useGetProjects } from "../../../../services/getInfo";
+import GoogleTranslate from "../../../GoogleTranslate";
 
 export const LayoutHeader: FC = () => {
-  const [telNum, setTelNum] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [linkFacebook, setLinkFaceBook] = useState<string>("");
-  const [linkLinkedin, setLinkLinkedin] = useState<string>("");
-
-  useEffect(() => {
-    axios
-      .get(
-        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`
-      )
-      .then((response) => {
-        setTelNum(
-          response.data.items[0].fields.telephoneNumber.content[0].content[0]
-            .value
-        );
-        setEmail(
-          response.data.items[0].fields.email.content[0].content[0].value
-        );
-        setLinkFaceBook(
-          response.data.items[0].fields.facebookLink.content[0].content[0].value
-        );
-        setLinkLinkedin(
-          response.data.items[0].fields.linkedinLink.content[0].content[0].value
-        );
-      })
-      .catch((error) => {
-        console.error("Error fetching posts:", error);
-      });
-  }, []);
+  const { project } = useGetProjects();
 
   return (
     <Wrapper>
       <Box>
         <LogoImg />
       </Box>
+
       <ContactAndFollow>
         <Contact>
           <WrapperImg>
@@ -75,10 +49,12 @@ export const LayoutHeader: FC = () => {
               title="Phone"
             />
           </WrapperImg>
+
           <ContactInfo>
-            <Tel href={`tel:${OTHER_INFO.tel}`}>{OTHER_INFO.tel}</Tel>
+            <Tel href={`tel:${project?.tel}`}>{project?.tel}</Tel>
+
             <LinkAddress href={ROUTES.CONTACT_US}>
-              <Email>{OTHER_INFO.email}</Email>
+              <Email>{project?.email}</Email>
             </LinkAddress>
           </ContactInfo>
         </Contact>
@@ -94,8 +70,9 @@ export const LayoutHeader: FC = () => {
           </WrapperImg>
           <FollowInfo>
             <Title>Follow Us</Title>
+
             <WrapperFollow>
-              <Link href={linkFacebook} target="_blank">
+              <Link href={project?.links[0].link} target="_blank">
                 <Image
                   src={IMGFacebook}
                   width={12}
@@ -104,7 +81,8 @@ export const LayoutHeader: FC = () => {
                   title="Facebook"
                 />
               </Link>
-              <Link href={linkLinkedin} target="_blank">
+
+              <Link href={project?.links[1].link} target="_blank">
                 <Image
                   src={IMGLinkedin}
                   width={12}

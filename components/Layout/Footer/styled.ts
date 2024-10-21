@@ -77,10 +77,10 @@ export const ContactInfo = styled(Box)(() => {
   return {};
 });
 
-export const Tel = styled('a')(() => {
+export const Tel = styled("a")(() => {
   return {
-    display: 'block',
-    textDecoration: 'none',
+    display: "block",
+    textDecoration: "none",
     marginBottom: 2,
     color: "white",
     fontSize: 14,
@@ -269,6 +269,7 @@ export const Copyright = styled(Box)(() => {
 export const Links = styled(Box)(() => {
   return {
     display: "flex",
+    overflow: "hidden",
   };
 });
 

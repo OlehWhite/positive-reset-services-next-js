@@ -5,6 +5,7 @@ import Image from "next/image";
 export const HeaderContainer = styled("header")(() => {
   return {
     height: "80vh",
+    position: "relative",
   };
 });
 
@@ -24,12 +25,15 @@ export const BackgroundTwo = styled(Slider)(() => {
   };
 });
 
-export const Img = styled("img")(() => {
+export const Img = styled(Image)(() => {
   return {
+    width: "100%",
     height: "80vh",
     objectFit: "cover",
     objectPosition: "center center",
     transition: "opacity 0.5s ease-in-out",
+    boxSizing: "border-box",
+    overflow: "hidden",
   };
 });
 

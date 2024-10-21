@@ -64,6 +64,7 @@ export const Wrapper = styled(Box)(() => {
     maxWidth: 350,
     width: "100%",
     transition: ".3s",
+    cursor: "pointer",
   };
 });
 
@@ -97,5 +98,6 @@ export const PostText = styled(Box)(() => {
     fontSize: 16,
     fontWeight: 600,
     color: "#373737",
+    paddingTop: 16,
   };
 });

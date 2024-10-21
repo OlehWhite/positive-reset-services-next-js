@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useState } from "react";
 import {
   Img,
   PersonCard,
@@ -10,51 +10,35 @@ import {
   ModalText,
   ModalImg,
 } from "../../otherPages/ourStaff/style";
-import { PRIVATE_DATA } from "../privateData";
-import axios from "axios";
-import { Box, Modal } from "@mui/material";
+import { Box, Modal, Stack, Typography } from "@mui/material";
+import { IProvider } from "../../services/types";
 
 interface Props {
-  counselor: any;
+  provider: IProvider;
 }
 
-const PersonCardComponent: FC<Props> = ({ counselor }) => {
-  const [counselorsImg, setCounselorsImg] = useState<any>({});
-  const [openModalWindow, setOpenModalWindow] = useState<boolean>(false);
-
-  useEffect(() => {
-    axios
-      .get(
-        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/assets/${counselor.fields.img.sys.id}?access_token=${PRIVATE_DATA.accessId}`,
-      )
-      .then((response) => {
-        setCounselorsImg([response.data.fields.file.url]);
-      })
-      .catch((error) => {
-        console.error("Error fetching posts:", error);
-      });
-  }, [counselor]);
+const PersonCardComponent: FC<Props> = ({ provider }) => {
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <>
-      <WrapperPersonCard onClick={() => setOpenModalWindow(true)}>
+      <WrapperPersonCard onClick={() => setOpen(true)}>
         <PersonCard>
-          <Img src={counselorsImg} alt={counselor.fields.firstLastName} />
+          <Img src={provider?.image} alt={provider?.firstName} />
           <Box height={110}>
-            <TextName>{counselor.fields.firstLastName}</TextName>
+            <TextName>
+              {provider?.firstName} {provider?.lastName}
+            </TextName>
             <Text>
-              {counselor?.fields?.about?.content[0].content[0].value.slice(
-                0,
-                60,
-              )}
+              {provider?.title.slice(0, 60)}
               ...
             </Text>
           </Box>
         </PersonCard>
       </WrapperPersonCard>
       <Modal
-        open={openModalWindow}
-        onClose={() => setOpenModalWindow(false)}
+        open={open}
+        onClose={() => setOpen(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
@@ -66,18 +50,36 @@ const PersonCardComponent: FC<Props> = ({ counselor }) => {
             borderRadius="15px"
             overflow="hidden"
           >
-            <ModalImg
-              src={counselorsImg}
-              alt={counselor.fields.firstLastName}
-            />
+            <ModalImg src={provider?.image} alt={provider?.firstName} />
           </Box>
           <Box width="100%">
-            <ModalTitle>{counselor.fields.firstLastName}</ModalTitle>
+            <Stack
+              direction="row"
+              alignItems="center"
+              justifyContent="space-between"
+            >
+              <Typography fontSize={20}>
+                {provider?.firstName} {provider?.lastName}
+              </Typography>
+
+              <Typography fontSize={20}>Age: {provider?.age}</Typography>
+            </Stack>
+
             <hr />
             <Box overflow="auto" height="400px">
-              {counselor?.fields?.about?.content.map((paragraph, index) => (
-                <ModalText key={index}>{paragraph.content[0].value}</ModalText>
-              ))}
+              <Typography fontSize={20} fontWeight="bold" mb={3}>
+                {provider?.title}
+              </Typography>
+
+              <Typography fontSize={16} mb={3}>
+                {provider?.text}
+              </Typography>
+
+              {provider?.link && (
+                <Box component="a" href={provider?.link} target="_black">
+                  {provider?.link}
+                </Box>
+              )}
             </Box>
           </Box>
         </ModalContainer>

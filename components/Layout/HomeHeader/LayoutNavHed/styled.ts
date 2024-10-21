@@ -11,6 +11,7 @@ export const Wrapper = styled("nav")(() => {
   return {
     display: "flex",
     justifyContent: "space-between",
+    alignItems: "center",
     maxWidth: 1300,
     margin: "0 auto",
     padding: "20px",

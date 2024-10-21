@@ -21,29 +21,14 @@ export const AsideClinic: FC<TAsideClinic> = ({ setOpenIndex, location }) => {
         </Box>
       </Block>
       <BoxWrapper>
-        <TitleCard>{location.title}</TitleCard>
-        <Address>{location.address}</Address>
-        <InfoCard>{location.tel}</InfoCard>
-        {location.email ? (
-          <InfoCardLink href={location.emailLink} target="_blank">
-            {location.email}
-          </InfoCardLink>
-        ) : (
-          <InfoCard>{location.email}</InfoCard>
-        )}
-        {location.webSiteLink ? (
-          <InfoCardLink href={location.webSiteLink} target="_blank">
-            {location.webSite}
-          </InfoCardLink>
-        ) : (
-          <InfoCard>{location.webSite}</InfoCard>
-        )}
+        <TitleCard>{location?.title}</TitleCard>
+        <Address>{location?.address}</Address>
+        <InfoCard>{location?.tel}</InfoCard>
+
+        <InfoCardLink>{location?.email}</InfoCardLink>
       </BoxWrapper>
-      {location && location.location === "Opening soon!" ? (
-        ""
-      ) : (
-        <Iframe src={location.location}></Iframe>
-      )}
+
+      <Iframe src={location.googleMap}></Iframe>
     </Wrapper>
   );
 };

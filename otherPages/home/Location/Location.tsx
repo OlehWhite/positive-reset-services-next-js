@@ -19,7 +19,7 @@ import Slider from "react-slick";
 import Drawer from "@mui/material/Drawer";
 import { AsideClinic } from "./AsideClinic/AsideClinic";
 import Image from "next/image";
-import { LOCATIONS } from "../../utils";
+import { useGetProjects } from "../../../services/getInfo";
 
 const settings = {
   dots: false,
@@ -40,6 +40,8 @@ const settings = {
 };
 
 export const Location: FC = () => {
+  const { project } = useGetProjects();
+
   const ref = useRef<Slider | null>(null);
   const [openIndex, setOpenIndex] = useState(-1);
 
@@ -61,10 +63,15 @@ export const Location: FC = () => {
     ref.current?.slickPrev();
   };
 
+  if (!project) {
+    return <Box>Loading...</Box>;
+  }
+
   return (
     <Container>
       <Info>
         <Title>POSITIVE RESET SERVICES LOCATIONS</Title>
+
         <Text>
           POSITIVE RESET SERVICES is a successful franchise company that opens
           Mental Health Clinics across Unlined Sates. POSITIVE RESET SERVICES
@@ -72,6 +79,7 @@ export const Location: FC = () => {
           financial success and successful treatment outcomes.
         </Text>
       </Info>
+
       <Carusell>
         <Image
           src={IMGLeft}
@@ -80,23 +88,23 @@ export const Location: FC = () => {
           alt="Left Button"
           title="Left Button"
           onClick={onPrev}
-          id="arrow-off "
+          id="arrow-off"
         />
+
         <Clinicals {...settings} ref={ref}>
-          {LOCATIONS.map((location, index) => (
+          {project?.locations.map((location, index) => (
             <Wrapper key={index}>
               <Box onClick={() => setOpenIndex(index)}>
-                <Box>
-                  <Img
-                    src={
-                      location.isOpened
-                        ? "/location-open.png"
-                        : "/location-opening-soon.png"
-                    }
-                    alt={location.address}
-                    title={location.address}
-                  />
-                </Box>
+                <Img
+                  src={
+                    location.open
+                      ? "/location-open.png"
+                      : "/location-opening-soon.png"
+                  }
+                  alt={location.address}
+                  title={location.address}
+                />
+
                 <Box>
                   <TitleCard>{location.title}</TitleCard>
                   <Address>{location.address}</Address>
@@ -105,6 +113,7 @@ export const Location: FC = () => {
                   <InfoCard>{location.link}</InfoCard>
                 </Box>
               </Box>
+
               <Drawer
                 anchor="right"
                 open={openIndex === index}
@@ -115,6 +124,7 @@ export const Location: FC = () => {
             </Wrapper>
           ))}
         </Clinicals>
+
         <Image
           src={IMGRight}
           width={64}

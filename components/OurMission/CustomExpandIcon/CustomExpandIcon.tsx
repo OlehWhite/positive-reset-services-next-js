@@ -27,6 +27,7 @@ const CustomExpandIcon = () => {
           title="Minus"
         />
       </div>
+
       <div className="collapsIconWrapper">
         <Image src={IMGPlus} width={20} height={20} alt="Plus" title="Plus" />
       </div>

@@ -3,6 +3,8 @@ import { Wrapper, Arrow, Img } from "./styled";
 import { Footer } from "./Footer/Footer";
 import Image from "next/image";
 import IMGLogo from "../../public/down-arrow.png";
+import GoogleTranslate from "../GoogleTranslate";
+import PhoneIcon from "./PhoneIcon";
 
 interface CustomImgProps {
   show: boolean;
@@ -45,7 +47,9 @@ export const Layout: FC = ({ children }: PropsWithChildren<{}>) => {
 
   return (
     <>
+      <GoogleTranslate />
       <Wrapper>
+        <PhoneIcon />
         {children}
         <Footer />
         <Arrow>
