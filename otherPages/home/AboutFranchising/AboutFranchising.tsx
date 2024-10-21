@@ -96,7 +96,9 @@ export const AboutFranchising: FC = () => {
               <Wrapper key={index} onClick={() => handleOpenBlog(blog.id)}>
                 <Img src={blog?.image} alt={blog?.title} title={blog?.title} />
 
-                <PostText>{blog?.title}</PostText>
+                <Typography mt={2} width={350} fontWeight={600}>
+                  {blog?.title}
+                </Typography>
 
                 <Typography pt={2} fontSize={14} color="#a8a8a8">
                   {blog?.date}
