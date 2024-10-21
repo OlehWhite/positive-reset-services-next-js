@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="Integration information from custom admin panel">
+    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/home/AboutFranchising/AboutFranchising.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/AboutFranchising/AboutFranchising.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherPages/home/AboutFranchising/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/otherPages/home/AboutFranchising/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/blogs/[blogId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blogs/[blogId].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +101,7 @@
       <workItem from="1710082042724" duration="408000" />
       <workItem from="1727554485533" duration="7337000" />
       <workItem from="1728377953989" duration="739000" />
-      <workItem from="1728672729027" duration="72391000" />
+      <workItem from="1728672729027" duration="72733000" />
     </task>
     <task id="LOCAL-00003" summary="update">
       <created>1686481996131</created>
@@ -448,7 +446,7 @@
       <option name="project" value="LOCAL" />
       <updated>1687377172674</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,6 +479,7 @@
     <MESSAGE value="fix update" />
     <MESSAGE value="added default location`s array for now" />
     <MESSAGE value="Integration information from custom admin panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integration information from custom admin panel" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>

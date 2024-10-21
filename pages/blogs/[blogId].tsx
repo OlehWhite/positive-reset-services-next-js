@@ -84,6 +84,7 @@ const BlogId = ({ data }) => {
             sx={{
               position: "relative",
               width: 1,
+              maxWidth: 380,
               minWidth: 380,
               height: 253,
               mb: 1,
