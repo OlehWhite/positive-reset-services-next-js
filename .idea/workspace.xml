@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="update title">
+    <list default="true" id="6d0662ac-54e4-4449-b5a9-cd9c27c583a2" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Footer/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blogs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blogs/[blogId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blogs/[blogId].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,7 @@
       <workItem from="1710082042724" duration="408000" />
       <workItem from="1727554485533" duration="7337000" />
       <workItem from="1728377953989" duration="739000" />
-      <workItem from="1728672729027" duration="73390000" />
+      <workItem from="1728672729027" duration="74788000" />
     </task>
     <task id="LOCAL-00003" summary="update">
       <created>1686481996131</created>
@@ -446,7 +447,7 @@
       <option name="project" value="LOCAL" />
       <updated>1687377172674</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +468,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/positive-reset-clinic-next-js" />
     </ignored-roots>
-    <MESSAGE value="update" />
     <MESSAGE value="fix last mistakes" />
     <MESSAGE value="corrections have been made" />
     <MESSAGE value="fix page website" />
@@ -482,6 +482,7 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Update size img" />
     <MESSAGE value="update title" />
-    <option name="LAST_COMMIT_MESSAGE" value="update title" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

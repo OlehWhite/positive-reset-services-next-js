@@ -128,7 +128,7 @@ const Blogs = () => {
                   </Stack>
 
                   <Stack gap={2}>
-                    <Typography component="h3" fontSize={24} fontWeight={600}>
+                    <Typography component="h3" fontSize={19} fontWeight={600}>
                       {blog?.title}
                     </Typography>
 

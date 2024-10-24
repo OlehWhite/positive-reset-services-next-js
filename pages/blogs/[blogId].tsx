@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { OtherHeader } from "../../components/Layout/OtherHeader/OtherHeader";
 import React, { useEffect, useState } from "react";
-import { Title } from "../../otherPages/careerOpportunities/styled";
 import { Box, CircularProgress, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/router";
 import { IBlog } from "../../services/types";
@@ -9,6 +8,7 @@ import Image from "next/image";
 import Button from "@mui/material/Button";
 import { CURRENT_WEBSITE } from "../../services/constants";
 import { fetchProjects } from "../../services/getInfo";
+import { Title } from "../../otherPages/careerOpportunities/styled";
 
 export const getStaticProps = async () => {
   const data = await fetchProjects();
@@ -121,7 +121,7 @@ const BlogId = ({ data }) => {
         </Stack>
 
         <Stack>
-          <Box fontSize={34} fontWeight={600} component="h2">
+          <Box fontSize={28} fontWeight={600} component="h2">
             {blog?.title}
           </Box>
 
